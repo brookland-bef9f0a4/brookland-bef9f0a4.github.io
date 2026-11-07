@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>黄果短剧官方入口-官方入口直达_热门短剧推荐_黄果短剧在线看</title>
+  <meta name="description" content="黄果短剧官方入口提供最新热门短剧在线观看与官方入口直达，涵盖都市、逆袭、甜宠、古装等题材，每日更新短剧榜单与追更指南，助你快速找到黄果短剧官方入口，畅享高清流畅的短剧内容。">
+  <meta name="keywords" content="黄果短剧官方入口,黄果短剧,短剧官方入口,热门短剧推荐,黄果短剧在线看">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23f97316'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white'%3E黄%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #fefcf8;
+      --surface: #ffffff;
+      --primary: #f97316;
+      --primary-soft: #fff1e6;
+      --primary-deep: #c2410c;
+      --text-primary: #1a1a1a;
+      --text-secondary: #4b5563;
+      --text-muted: #9ca3af;
+      --border-light: #f0e8e0;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 8px 24px rgba(249, 115, 22, 0.08);
+      --radius-card: 20px;
+      --radius-btn: 40px;
+      --max-width: 1200px;
+      --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    ul, ol {
+      list-style: none;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* 顶部导航 */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.88);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--primary-deep);
+    }
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      background: var(--primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .nav-cta {
+      background: var(--primary);
+      color: white;
+      padding: 10px 24px;
+      border-radius: var(--radius-btn);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover {
+      background: var(--primary-deep);
+      transform: translateY(-1px);
+    }
+    /* 首屏Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+      border-radius: 0 0 40px 40px;
+      padding: 48px 20px 56px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--primary-deep);
+      padding: 6px 18px;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+    .hero-banner h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: #1a1a1a;
+    }
+    .hero-banner h1 span {
+      color: var(--primary);
+      position: relative;
+      white-space: nowrap;
+    }
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .search-box {
+      display: flex;
+      max-width: 540px;
+      margin: 0 auto 28px;
+      background: white;
+      border-radius: 60px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      padding: 6px;
+      border: 1px solid var(--border-light);
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 60px;
+      font-size: 1rem;
+      outline: none;
+      background: transparent;
+    }
+    .search-box button {
+      background: var(--primary);
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .search-box button:hover {
+      background: var(--primary-deep);
+    }
+    .quick-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .quick-tag {
+      background: white;
+      border: 1px solid var(--border-light);
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.15s;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+    .quick-tag:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-soft);
+    }
+    /* 通用section */
+    .section {
+      margin-bottom: 56px;
+    }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 28px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+    .section-link {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .content-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 22px 20px 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #ffe0cc;
+    }
+    .card-tag {
+      display: inline-block;
+      background: var(--primary-soft);
+      color: var(--primary-deep);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 40px;
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+      align-self: flex-start;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.4;
+      color: var(--text-primary);
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-light);
+      padding-top: 12px;
+      margin-top: auto;
+    }
+    .card-meta .hot {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .update-item {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid var(--border-light);
+      transition: background 0.15s;
+      flex-wrap: wrap;
+    }
+    .update-item:hover {
+      background: #fffbf7;
+    }
+    .update-badge {
+      background: var(--primary-soft);
+      color: var(--primary-deep);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 16px;
+      border-radius: 40px;
+      white-space: nowrap;
+    }
+    .update-info {
+      flex: 1;
+      min-width: 180px;
+    }
+    .update-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+    .update-summary {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .update-time {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+    /* 深度解析正文 */
+    .deep-analysis {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 40px 36px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+    .deep-analysis h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      color: var(--primary-deep);
+    }
+    .deep-analysis h3:first-of-type {
+      margin-top: 0;
+    }
+    .deep-analysis p {
+      color: var(--text-secondary);
+      margin-bottom: 18px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .deep-analysis p strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 16px;
+    }
+    .category-item {
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 20px 12px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: all 0.15s;
+    }
+    .category-item:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary-deep);
+      transform: translateY(-2px);
+    }
+    /* FAQ 手风琴 */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq-item {
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .faq-question:hover {
+      background: #fffbf7;
+    }
+    .faq-question span {
+      color: var(--primary);
+      font-size: 1.4rem;
+      font-weight: 400;
+      transition: transform 0.2s;
+    }
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      padding: 0 24px 20px 24px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      display: none;
+      line-height: 1.7;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 18px;
+    }
+    .comment-card {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 18px 20px;
+      border: 1px solid var(--border-light);
+    }
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .avatar {
+      width: 36px;
+      height: 36px;
+      background: var(--primary-soft);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary-deep);
+      font-size: 1rem;
+    }
+    .nickname {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .comment-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-left: auto;
+    }
+    .comment-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* 资讯 */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .news-card {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border-light);
+      transition: border-color 0.15s;
+    }
+    .news-card:hover {
+      border-color: var(--primary);
+    }
+    .news-date {
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .news-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .news-summary {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    /* 页脚 */
+    .site-footer {
+      background: #1f1a16;
+      color: #b9afa7;
+      padding: 48px 0 32px;
+      border-radius: 40px 40px 0 0;
+      margin-top: 40px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    .footer-brand {
+      max-width: 300px;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      margin-top: 12px;
+      line-height: 1.7;
+      color: #9c8f85;
+    }
+    .footer-links {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .footer-col h4 {
+      color: #f0e8e0;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+      color: #9c8f85;
+    }
+    .footer-col a:hover {
+      color: var(--primary);
+    }
+    .footer-bottom {
+      border-top: 1px solid #332b26;
+      padding-top: 24px;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: #7a6e65;
+    }
+    /* 响应式 */
+    @media (max-width: 768px) {
+      .header-inner {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 12px 0;
+        gap: 12px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero-banner h1 {
+        font-size: 2rem;
+      }
+      .hero-desc {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.4rem;
+      }
+      .deep-analysis {
+        padding: 24px 20px;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-inner {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .footer-links {
+        gap: 32px;
+      }
+      .search-box {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        gap: 10px;
+        padding: 0;
+      }
+      .search-box input {
+        background: white;
+        border: 1px solid var(--border-light);
+        border-radius: 60px;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero-banner {
+        padding: 32px 16px 40px;
+      }
+      .hero-banner h1 {
+        font-size: 1.8rem;
+      }
+      .quick-tag {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/#home" class="logo-area" id="home">
+        <span class="logo-icon">黄</span>
+        <span>黄果短剧</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#hot">热门推荐</a>
+        <a href="/#update">最新更新</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <a href="/#entry" class="nav-cta">官方入口</a>
+    </div>
+  </header>
+
+  <!-- 首屏Banner -->
+  <section class="hero-banner" id="entry">
+    <div class="hero-inner">
+      <span class="hero-badge">🔥 每日更新 · 官方入口直达</span>
+      <h1><span>黄果短剧官方入口</span> 热门短剧在线看</h1>
+      <p class="hero-desc">全网热门短剧聚合平台，覆盖都市逆袭、古装甜宠、悬疑脑洞等题材，一个入口直达黄果短剧官方入口，追更不迷路。</p>
+      <div class="search-box">
+        <input type="text" placeholder="搜索短剧名称、演员或类型..." aria-label="搜索短剧">
+        <button>搜索</button>
+      </div>
+      <div class="quick-tags">
+        <a href="/#hot" class="quick-tag">都市逆袭</a>
+        <a href="/#hot" class="quick-tag">古装甜宠</a>
+        <a href="/#hot" class="quick-tag">悬疑脑洞</a>
+        <a href="/#update" class="quick-tag">今日更新</a>
+        <a href="/#rank" class="quick-tag">热度榜</a>
+        <a href="/#category" class="quick-tag">全部类型</a>
+        <a href="/#faq" class="quick-tag">常见问题</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- 内容简介 -->
+    <section class="section" id="intro">
+      <div class="section-header">
+        <h2 class="section-title">关于黄果短剧官方入口</h2>
+      </div>
+      <div class="deep-analysis" style="padding: 32px 36px;">
+        <p style="font-size:1.05rem; margin-bottom:16px;"><strong>黄果短剧官方入口</strong>是专为短剧爱好者打造的聚合平台，这里汇集了全网热门短剧资源，提供官方入口直达服务。无论你是喜欢都市逆袭爽剧、古装甜宠恋爱，还是悬疑脑洞题材，都能在这里快速找到对应内容。页面每日更新短剧榜单和追更指南，帮助用户第一时间掌握最新动态。</p>
+        <p style="font-size:1.05rem; margin-bottom:16px;">对于短剧用户来说，最核心的需求就是<strong>快速找到官方入口</strong>并流畅观看。本页面围绕这一需求，整理了热门短剧推荐、最新更新列表、深度解析和常见问题，降低信息筛选成本。适合追剧党、通勤碎片时间用户以及想了解短剧行业动态的观众收藏使用。</p>
+        <p style="font-size:1.05rem; margin-bottom:0;">为什么值得收藏？页面结构清晰，分类筛选方便，移动端适配良好，相关推荐能不断扩展浏览路径。无论你是刚接触短剧的新用户，还是已经追过几十部作品的老观众，都能在这里发现新的兴趣点。</p>
+      </div>
+    </section>
+
+    <!-- 热门内容推荐 -->
+    <section class="section" id="hot">
+      <div class="section-header">
+        <h2 class="section-title">热门短剧推荐</h2>
+        <a href="/#update" class="section-link">查看全部 →</a>
+      </div>
+      <div class="card-grid">
+        <div class="content-card">
+          <span class="card-tag">都市逆袭</span>
+          <h3 class="card-title">《闪婚后，傅先生马甲藏不住了》</h3>
+          <p class="card-desc">契约婚姻变真爱，女主隐藏身份竟是商业大佬，反转不断。上线3天播放破亿，爽点密集。</p>
+          <div class="card-meta"><span>🔥 热度 9862</span><span>全80集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">古装甜宠</span>
+          <h3 class="card-title">《王妃她每天都在想和离》</h3>
+          <p class="card-desc">穿书成为炮灰王妃，本想躺平却意外撩到冷面王爷。轻喜剧画风，每集3分钟高甜。</p>
+          <div class="card-meta"><span>🔥 热度 9201</span><span>更新至52集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">悬疑脑洞</span>
+          <h3 class="card-title">《她从深渊来》</h3>
+          <p class="card-desc">记忆缺失的女主卷入连环谜案，每集结尾都有反转。短剧届的悬疑黑马，弹幕直呼烧脑。</p>
+          <div class="card-meta"><span>🔥 热度 8877</span><span>全60集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">甜宠恋爱</span>
+          <h3 class="card-title">《暗恋·橘生淮南》短剧版</h3>
+          <p class="card-desc">经典IP短剧化，还原暗恋的小心翼翼。画面清新，插曲出圈，适合下饭观看。</p>
+          <div class="card-meta"><span>🔥 热度 7650</span><span>更新至38集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">逆袭爽剧</span>
+          <h3 class="card-title">《重生之我在霸总身边当保姆》</h3>
+          <p class="card-desc">重生复仇+职场逆袭，女主靠预知能力步步为营。剧情节奏快，一集一个爽点。</p>
+          <div class="card-meta"><span>🔥 热度 7123</span><span>全72集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">家庭伦理</span>
+          <h3 class="card-title">《婆婆的镯子》</h3>
+          <p class="card-desc">一只镯子引发的家庭暗战，真实到让人窒息。短剧届的“现实题材”代表作，引发广泛讨论。</p>
+          <div class="card-meta"><span>🔥 热度 6890</span><span>全48集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">校园青春</span>
+          <h3 class="card-title">《同桌，你掉马了》</h3>
+          <p class="card-desc">学霸与校霸的双向暗恋，从互相嫌弃到真香现场。轻松解压，弹幕全程姨母笑。</p>
+          <div class="card-meta"><span>🔥 热度 6345</span><span>更新至30集</span></div>
+        </div>
+        <div class="content-card">
+          <span class="card-tag">玄幻脑洞</span>
+          <h3 class="card-title">《我的手机能穿越》</h3>
+          <p class="card-desc">一部旧手机连接古今，男主靠现代知识在古代混得风生水起。脑洞大、笑点密。</p>
+          <div class="card-meta"><span>🔥 热度 5980</span><span>全90集</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="section" id="update">
+      <div class="section-header">
+        <h2 class="section-title">最新更新动态</h2>
+        <a href="/#hot" class="section-link">更多更新 →</a>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <span class="update-badge">今日更新</span>
+          <div class="update-info">
+            <div class="update-name">《闪婚后，傅先生马甲藏不住了》</div>
+            <div class="update-summary">第78集已上线，女主真实身份曝光，全网热议。</div>
+          </div>
+          <span class="update-time">2026-11-07</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">今晚直播</span>
+          <div class="update-info">
+            <div class="update-name">《王妃她每天都在想和离》</div>
+            <div class="update-summary">主演连麦直播，聊幕后花絮，时间20:00。</div>
+          </div>
+          <span class="update-time">2026-11-07</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">新剧上线</span>
+          <div class="update-info">
+            <div class="update-name">《他从火光中走来》短剧版</div>
+            <div class="update-summary">消防员×记者设定，首更12集，会员抢先看。</div>
+          </div>
+          <span class="update-time">2026-11-06</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">番外篇</span>
+          <div class="update-info">
+            <div class="update-name">《暗恋·橘生淮南》</div>
+            <div class="update-summary">番外篇“婚后日常”上线，甜度超标。</div>
+          </div>
+          <span class="update-time">2026-11-06</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">完结撒花</span>
+          <div class="update-info">
+            <div class="update-name">《她从深渊来》</div>
+            <div class="update-summary">大结局上线，真凶揭晓，豆瓣短评区炸锅。</div>
+          </div>
+          <span class="update-time">2026-11-05</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">预告</span>
+          <div class="update-info">
+            <div class="update-name">《重生之我在霸总身边当保姆》</div>
+            <div class="update-summary">明日更新第60集，女主开启终极复仇。</div>
+          </div>
+          <span class="update-time">2026-11-05</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">热度飙升</span>
+          <div class="update-info">
+            <div class="update-name">《婆婆的镯子》</div>
+            <div class="update-summary">因剧情过于真实登上热搜，播放量单日翻倍。</div>
+          </div>
+          <span class="update-time">2026-11-04</span>
+        </div>
+        <div class="update-item">
+          <span class="update-badge">上线</span>
+          <div class="update-info">
+            <div class="update-name">《我的手机能穿越》</div>
+            <div class="update-summary">全集上线，脑洞穿越短剧，一口气看完无压力。</div>
+          </div>
+          <span class="update-time">2026-11-04</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="category">
+      <div class="section-header">
+        <h2 class="section-title">分类快捷入口</h2>
+      </div>
+      <div class="category-grid">
+        <a href="/#hot" class="category-item">都市逆袭</a>
+        <a href="/#hot" class="category-item">古装甜宠</a>
+        <a href="/#hot" class="category-item">悬疑脑洞</a>
+        <a href="/#hot" class="category-item">校园青春</a>
+        <a href="/#hot" class="category-item">家庭伦理</a>
+        <a href="/#hot" class="category-item">玄幻穿越</a>
+        <a href="/#hot" class="category-item">职场商战</a>
+        <a href="/#hot" class="category-item">重生复仇</a>
+      </div>
+    </section>
+
+    <!-- 深度解析正文 -->
+    <section class="section" id="analysis">
+      <div class="section-header">
+        <h2 class="section-title">黄果短剧深度解析</h2>
+      </div>
+      <div class="deep-analysis">
+        <p><strong>黄果短剧官方入口</strong>所代表的短剧内容形态，正在成为当下碎片化娱乐消费的主流。短剧区别于传统长剧的核心在于“节奏密、爽点足、单集时长短”。通常每集3-5分钟，一部作品80-100集，用户可以在通勤、午休等场景下快速刷完。这种内容形态对编剧的要求极高——前10秒必须抓住注意力，每集结尾必须留钩子。</p>
+        <h3>题材特点：为什么这些短剧让人上头</h3>
+        <p>从题材分布来看，<strong>都市逆袭</strong>和<strong>古装甜宠</strong>是两大主力赛道。都市逆袭类通常围绕“扮猪吃老虎”“契约婚姻”“重生复仇”展开，满足用户对阶层跃迁和情感补偿的想象。古装甜宠则更侧重“先婚后爱”“追妻火葬场”等经典套路，通过高密度撒糖和轻喜剧画风降低观看门槛。悬疑脑洞类虽然数量较少，但用户粘性最高，例如《她从深渊来》每集结尾的反转设计，让观众自发在社交平台讨论剧情。</p>
+        <h3>人物与表演：短剧演员的独特表现力</h3>
+        <p>短剧演员的表演风格与长剧有明显差异——需要“一秒入戏”，表情和台词要更外放。不少短剧主演因此积累了固定粉丝群，例如《闪婚后》男主凭借“马甲大佬”人设迅速出圈。值得注意的是，短剧行业也在逐步精品化，部分作品开始采用电影级调色和原创配乐，用户体验明显提升。</p>
+        <h3>节奏与消费体验：为什么适合碎片时间</h3>
+        <p><strong>黄果短剧官方入口</strong>推荐的短剧普遍采用“强冲突+快推进”的叙事策略。前3集完成人物关系和核心矛盾建立，后续每2-3集一个小高潮。这种节奏对习惯了倍速观看的长剧用户来说非常友好。同时，短剧的互动性更强——弹幕、评论区和投币机制让用户能即时反馈，形成社区氛围。</p>
+        <h3>适合人群与同类比较</h3>
+        <p>短剧的核心用户画像集中在18-35岁，以女性用户为主，但男频逆袭类作品也在快速增长。与长剧相比，短剧更适合“不想追更太累”的用户；与短视频相比，短剧有完整的叙事弧线，不是纯碎片段子。如果你喜欢《闪婚后》这类作品，可以尝试《重生之我在霸总身边当保姆》；喜欢古装甜宠的观众，《王妃她每天都在想和离》是近期口碑不错的选择。</p>
+        <p>用户搜索“<strong>黄果短剧官方入口</strong>”通常是想找到稳定、更新及时的平台入口，同时了解当前热门作品和追更建议。本页面通过榜单、更新列表和分类入口的组合，尽量满足这一搜索意图。</p>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-header">
+        <h2 class="section-title">页面体验指南</h2>
+      </div>
+      <div class="deep-analysis" style="padding:28px 36px;">
+        <p>本页面围绕<strong>黄果短剧官方入口</strong>这一核心需求进行结构设计，分类筛选入口清晰，用户可通过顶部导航快速跳转到热门推荐、最新更新或常见问题区域。卡片式布局在移动端自动折叠为单列，保证手机阅读体验。</p>
+        <p>追更用户建议关注“最新更新”板块，这里汇总了当日上线、直播预告和完结信息。收藏本页后，每次打开即可快速了解短剧动态。相关推荐模块会根据热门程度展示不同题材作品，方便扩展浏览路径。FAQ部分整理了用户高频疑问，减少重复搜索成本。</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-header">
+        <h2 class="section-title">常见问题</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question">黄果短剧官方入口怎么找到？ <span>+</span></div>
+          <div class="faq-answer">黄果短剧官方入口可通过本页面顶部“官方入口”按钮直达，页面内所有卡片和列表也链接到对应内容区域。建议收藏本页，避免每次搜索时误入仿冒站点。官方入口通常提供高清流畅播放和每日更新，认准页面底部版权信息即可。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">最近哪部短剧最值得看？ <span>+</span></div>
+          <div class="faq-answer">当前热度最高的是《闪婚后，傅先生马甲藏不住了》，都市逆袭题材，反转密集，全80集已完结。如果偏好古装甜宠，推荐《王妃她每天都在想和离》，轻喜剧风格，更新至52集。悬疑爱好者可以看《她从深渊来》，已完结，适合一口气刷完。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">短剧一般每集多长时间？ <span>+</span></div>
+          <div class="faq-answer">短剧单集时长通常在3-5分钟，部分作品在2分钟左右。一部完整短剧大概80-100集，总时长相当于一部电影或一部中篇剧集。这种时长设计适合通勤、排队等碎片时间观看，不需要长时间连续投入。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">黄果短剧官方入口需要付费吗？ <span>+</span></div>
+          <div class="faq-answer">平台内部分短剧免费观看，部分新剧或热门作品可能需要会员或付费解锁。具体以页面实际显示为准。建议先查看免费剧集感受风格，再决定是否付费。本页面仅提供入口导航和内容推荐，不参与收费环节。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">有没有类似《闪婚后》的短剧推荐？ <span>+</span></div>
+          <div class="faq-answer">如果你喜欢《闪婚后》的逆袭甜宠风格，可以尝试《重生之我在霸总身边当保姆》，同样是女主逆袭+情感线；《婆婆的镯子》偏现实家庭题材，但冲突感强；《同桌，你掉马了》是校园甜宠，节奏更轻松。这几部在热门推荐板块都有入口。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">短剧更新频率是怎样的？ <span>+</span></div>
+          <div class="faq-answer">大部分短剧采用日更或周更模式，热门作品通常每天更新2-4集，完结后一次性放出全集。本页面“最新更新”板块会每日同步更新动态，包括上线、完结和直播预告，建议定期查看。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-header">
+        <h2 class="section-title">用户评论</h2>
+      </div>
+      <div class="comment-grid">
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">追</span><span class="nickname">追剧小能手</span><span class="comment-date">11-07</span></div>
+          <p class="comment-text">《闪婚后》真的太上头了，本来只想看一集结果通宵刷完。马甲大佬的设定虽然老套但就是停不下来。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">橘</span><span class="nickname">橘子汽水</span><span class="comment-date">11-06</span></div>
+          <p class="comment-text">王妃那部剧的画风很舒服，演员颜值在线，每集结尾的彩蛋也用心。就是更新太慢了，等得着急。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">深</span><span class="nickname">深海鱼</span><span class="comment-date">11-06</span></div>
+          <p class="comment-text">《她从深渊来》的悬疑线埋得不错，但最后两集感觉有点赶，有些伏笔没收回。整体还是值得一看。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">路</span><span class="nickname">路人甲</span><span class="comment-date">11-05</span></div>
+          <p class="comment-text">黄果短剧官方入口挺好找的，页面分类也清楚，比之前用的小程序方便。希望多更新一些悬疑题材。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">柠</span><span class="nickname">柠檬不萌</span><span class="comment-date">11-04</span></div>
+          <p class="comment-text">《婆婆的镯子》看得我血压升高，但就是忍不住往下看。这种家庭伦理短剧太真实了，建议和妈妈一起看。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">夜</span><span class="nickname">夜航星</span><span class="comment-date">11-04</span></div>
+          <p class="comment-text">《我的手机能穿越》脑洞挺大的，但后面剧情有点重复，看到60集左右就疲劳了。不过打发时间还是可以的。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">小</span><span class="nickname">小满</span><span class="comment-date">11-03</span></div>
+          <p class="comment-text">暗恋短剧版还原度不错，插曲也好听。就是每集太短了，刚入戏就结束了，建议养肥再看。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">大</span><span class="nickname">大白兔</span><span class="comment-date">11-03</span></div>
+          <p class="comment-text">短剧现在质量越来越高了，有些镜头和配乐不输长剧。希望官方入口能多推一些精品，少点粗制滥造。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">阿</span><span class="nickname">阿茶</span><span class="comment-date">11-02</span></div>
+          <p class="comment-text">《重生之我在霸总身边当保姆》复仇线很爽，但男主存在感有点弱，更像女主独角戏。不过爽就完事了。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">星</span><span class="nickname">星野</span><span class="comment-date">11-01</span></div>
+          <p class="comment-text">有没有类似《她从深渊来》的悬疑短剧推荐？找了好久没找到同类型的，求推荐。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">一</span><span class="nickname">一只猫</span><span class="comment-date">10-31</span></div>
+          <p class="comment-text">最近短剧同质化有点严重，十部有八部都是霸总。希望多出点新题材，比如科幻或者职业剧。</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-header"><span class="avatar">甜</span><span class="nickname">甜筒</span><span class="comment-date">10-30</span></div>
+          <p class="comment-text">《同桌，你掉马了》太甜了，看得我嘴角下不来。校园剧还是得看这种轻松向的。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-header">
+        <h2 class="section-title">短剧相关资讯</h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-date">2026-11-07</div>
+          <h4 class="news-title">短剧市场Q4观察：精品化趋势明显</h4>
+          <p class="news-summary">据行业报告，2026年Q4短剧制作成本同比上涨30%，更多团队开始采用电影级设备，题材多元化成为新趋势。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-06</div>
+          <h4 class="news-title">《闪婚后》主演官宣新作，合作悬疑短剧</h4>
+          <p class="news-summary">凭借《闪婚后》走红的男主演已确认加盟新悬疑短剧《迷雾追凶》，预计12月上线，引发粉丝期待。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-05</div>
+          <h4 class="news-title">黄果短剧官方入口新增“追更提醒”功能</h4>
+          <p class="news-summary">平台近期上线追更提醒功能，用户可订阅感兴趣的作品，更新后自动接收通知，提升追剧体验。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-04</div>
+          <h4 class="news-title">短剧出海加速，东南亚市场增长显著</h4>
+          <p class="news-summary">多部国产短剧被翻译成多语种在海外平台上线，都市逆袭和古装甜宠类最受欢迎，文化输出效果初显。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-03</div>
+          <h4 class="news-title">《婆婆的镯子》引发家庭关系大讨论</h4>
+          <p class="news-summary">该剧因真实刻画婆媳矛盾登上热搜，网友纷纷分享自己的经历，话题阅读量破2亿。</p>
+        </div>
+        <div class="news-card">
+          <div class="news-date">2026-11-02</div>
+          <h4 class="news-title">短剧演员片酬上涨，头部演员档期排满</h4>
+          <p class="news-summary">随着短剧市场扩大，头部短剧演员片酬较去年同期上涨50%，部分演员已开始接触长剧项目。</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="font-weight:700; font-size:1.2rem; color:#f0e8e0;">黄果短剧</div>
+          <p>汇聚热门短剧资讯与官方入口导航，每日更新追更指南。页面内容仅供信息参考，不参与任何收费环节。</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>快速导航</h4>
+            <a href="/#hot">热门推荐</a>
+            <a href="/#update">最新更新</a>
+            <a href="/#analysis">深度解析</a>
+            <a href="/#category">分类入口</a>
+          </div>
+          <div class="footer-col">
+            <h4>帮助</h4>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">用户评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#entry">官方入口</a>
+          </div>
+          <div class="footer-col">
+            <h4>友情链接</h4>
+            <a href="#">短剧排行榜</a>
+            <a href="#">影视资源库</a>
+            <a href="#">在线观看指南</a>
+            <a href="#">热门专题</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 黄果短剧官方入口导航页 · 内容仅供学习参考</span>
+        <span>免责声明：本页面不存储任何视频内容，所有链接均指向官方入口。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ 手风琴交互
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+      q.addEventListener('click', function() {
+        var item = this.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+              </html>
