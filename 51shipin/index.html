@@ -1,0 +1,1690 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>51视频每日大赛-每日短视频大赛排行榜_热门作品与参赛指南</title>
+<meta name="description" content="51视频每日大赛是短视频创作者与观众每日关注的焦点。本页提供每日大赛热门作品推荐、参赛规则解析、最新榜单动态、深度观察与常见问题，帮助您快速了解每日大赛看点、参与方式及优质内容趋势。">
+<meta name="keywords" content="51视频每日大赛,每日大赛排行榜,短视频大赛,51视频热门作品,每日大赛参赛指南">
+<style>
+:root {
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --surface-alt: #f0f3fa;
+  --text: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --brand: #2563eb;
+  --brand-light: #3b82f6;
+  --brand-soft: #dbeafe;
+  --accent: #8b5cf6;
+  --accent-soft: #ede9fe;
+  --border: #e2e8f0;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.04);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 导航 */
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.92);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 4px 10px rgba(37,99,235,0.3);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.nav-cta {
+  background: var(--brand);
+  color: #fff !important;
+  padding: 8px 20px !important;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+  transition: all 0.2s;
+}
+
+.nav-cta:hover {
+  background: #1d4ed8 !important;
+  transform: translateY(-1px);
+}
+
+/* Banner */
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #312e81 100%);
+  color: #fff;
+  padding: 56px 0 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99,102,241,0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(37,99,235,0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 18px;
+  backdrop-filter: blur(4px);
+}
+
+.hero-badge .dot {
+  width: 7px;
+  height: 7px;
+  background: #4ade80;
+  border-radius: 50%;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  max-width: 820px;
+}
+
+.hero h1 .highlight {
+  background: linear-gradient(120deg, #93c5fd, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: #cbd5e1;
+  max-width: 720px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-desc span {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  padding: 6px 6px 6px 22px;
+  max-width: 540px;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s;
+}
+
+.search-bar:focus-within {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(147,197,253,0.6);
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.search-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.search-bar button {
+  background: var(--brand-light);
+  border: none;
+  color: #fff;
+  padding: 9px 22px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.search-bar button:hover {
+  background: #2563eb;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-tags a {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.hero-tags a:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* 通用 section */
+.section {
+  padding: 52px 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-header h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-header h2::before {
+  content: '';
+  width: 4px;
+  height: 22px;
+  background: linear-gradient(180deg, var(--brand), var(--accent));
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.section-header .more-link {
+  font-size: 0.85rem;
+  color: var(--brand);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s;
+}
+
+.section-header .more-link:hover {
+  gap: 8px;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: -18px;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+
+/* 卡片网格 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: all 0.28s cubic-bezier(0.2,0.8,0.3,1);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #c7d2fe;
+}
+
+.card-cover {
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.card-cover.grad-1 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+.card-cover.grad-2 { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+.card-cover.grad-3 { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+.card-cover.grad-4 { background: linear-gradient(135deg, #10b981, #059669); }
+.card-cover.grad-5 { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+.card-cover.grad-6 { background: linear-gradient(135deg, #f97316, #eab308); }
+.card-cover.grad-7 { background: linear-gradient(135deg, #14b8a6, #0891b2); }
+.card-cover.grad-8 { background: linear-gradient(135deg, #8b5cf6, #d946ef); }
+.card-cover.grad-9 { background: linear-gradient(135deg, #64748b, #334155); }
+
+.card-cover .badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.card-body {
+  padding: 16px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.card-meta .tag {
+  background: var(--surface-alt);
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.card-meta .hot {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* 更新列表 */
+.update-list {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.update-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+  flex-wrap: wrap;
+}
+
+.update-item:last-child {
+  border-bottom: none;
+}
+
+.update-item:hover {
+  background: #f8fafc;
+}
+
+.update-time {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.update-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  flex: 1;
+  min-width: 180px;
+}
+
+.update-summary {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex: 2;
+  min-width: 200px;
+}
+
+.update-badge {
+  font-size: 0.7rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* 分类入口 */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.cat-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 16px;
+  text-align: center;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-sm);
+}
+
+.cat-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #c7d2fe;
+  background: linear-gradient(180deg, #ffffff, #f5f7ff);
+}
+
+.cat-item .cat-icon {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cat-item .cat-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.cat-item .cat-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* 深度解析 */
+.article-box {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 36px 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.article-box h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.article-box h2::before {
+  content: '';
+  width: 4px;
+  height: 22px;
+  background: linear-gradient(180deg, var(--brand), var(--accent));
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.article-box h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 26px 0 10px;
+  color: var(--text);
+}
+
+.article-box p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.article-box strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.article-box .highlight-text {
+  background: linear-gradient(180deg, transparent 60%, #dbeafe 60%);
+  padding: 0 2px;
+}
+
+/* FAQ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq-q {
+  padding: 16px 22px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  user-select: none;
+  color: var(--text);
+}
+
+.faq-q .icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: all 0.25s;
+  flex-shrink: 0;
+}
+
+.faq-item.open .faq-q .icon {
+  transform: rotate(45deg);
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+  padding: 0 22px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding: 0 22px 18px;
+}
+
+/* 评论 */
+.comment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.comment-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s;
+}
+
+.comment-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.comment-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.avatar.a1 { background: linear-gradient(135deg,#6366f1,#8b5cf6); }
+.avatar.a2 { background: linear-gradient(135deg,#0ea5e9,#2563eb); }
+.avatar.a3 { background: linear-gradient(135deg,#f59e0b,#ef4444); }
+.avatar.a4 { background: linear-gradient(135deg,#10b981,#059669); }
+.avatar.a5 { background: linear-gradient(135deg,#ec4899,#8b5cf6); }
+.avatar.a6 { background: linear-gradient(135deg,#f97316,#eab308); }
+.avatar.a7 { background: linear-gradient(135deg,#14b8a6,#0891b2); }
+.avatar.a8 { background: linear-gradient(135deg,#8b5cf6,#d946ef); }
+.avatar.a9 { background: linear-gradient(135deg,#64748b,#334155); }
+.avatar.a10 { background: linear-gradient(135deg,#e11d48,#be123c); }
+.avatar.a11 { background: linear-gradient(135deg,#0284c7,#0369a1); }
+.avatar.a12 { background: linear-gradient(135deg,#65a30d,#4d7c0f); }
+
+.comment-name {
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.comment-date {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.comment-text {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* 资讯 */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.news-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s;
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #c7d2fe;
+}
+
+.news-date {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.news-card h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.news-card p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 订阅区 */
+.subscribe-box {
+  background: linear-gradient(135deg, #1e293b 0%, #312e81 100%);
+  border-radius: var(--radius-lg);
+  padding: 40px 44px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-lg);
+}
+
+.subscribe-box h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.subscribe-box p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 0.875rem;
+  outline: none;
+  min-width: 220px;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s;
+}
+
+.subscribe-form input::placeholder {
+  color: #94a3b8;
+}
+
+.subscribe-form input:focus {
+  border-color: #93c5fd;
+  background: rgba(255,255,255,0.16);
+}
+
+.subscribe-form button {
+  background: var(--brand-light);
+  border: none;
+  color: #fff;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.subscribe-form button:hover {
+  background: #2563eb;
+}
+
+/* 页脚 */
+.footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 44px 0 28px;
+  margin-top: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-brand {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-brand .logo-mark {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.footer-desc {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #64748b;
+  max-width: 340px;
+}
+
+.footer h5 {
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer ul li a {
+  font-size: 0.82rem;
+  color: #64748b;
+  transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+  color: #93c5fd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.footer-bottom .links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .links a {
+  color: #475569;
+  transition: color 0.2s;
+}
+
+.footer-bottom .links a:hover {
+  color: #93c5fd;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-grid { grid-template-columns: repeat(4, 1fr); }
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.mobile-show { display: flex; }
+  .hero { padding: 40px 0 36px; }
+  .hero h1 { font-size: 1.6rem; }
+  .section { padding: 36px 0; }
+  .card-grid { grid-template-columns: 1fr; }
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .comment-grid { grid-template-columns: 1fr; }
+  .news-grid { grid-template-columns: 1fr; }
+  .article-box { padding: 24px 20px; }
+  .subscribe-box { padding: 28px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 22px; }
+  .update-item { gap: 8px; }
+  .update-summary { flex-basis: 100%; min-width: 0; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 14px; }
+  .hero h1 { font-size: 1.35rem; }
+  .hero-desc { font-size: 0.88rem; }
+  .hero-tags a { font-size: 0.72rem; padding: 5px 12px; }
+  .card-cover { height: 120px; font-size: 0.95rem; }
+  .section-header h2 { font-size: 1.2rem; }
+  .cat-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .cat-item { padding: 14px 10px; }
+  .subscribe-form input { min-width: 0; width: 100%; }
+  .subscribe-form button { width: 100%; }
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">51</span>
+      <span>51视频每日大赛</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/#hot-recommend">热门推荐</a>
+      <a href="/#latest-update">最新赛况</a>
+      <a href="/#category">大赛分类</a>
+      <a href="/#deep-analysis">深度解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">大赛资讯</a>
+      <a href="/#subscribe" class="nav-cta">订阅每日大赛</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 首屏 Banner -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      2026年11月7日 · 今日大赛进行中
+    </div>
+    <h1><span class="highlight">51视频每日大赛</span> — 每日短视频创作竞技场，热门作品与参赛风向标</h1>
+    <p class="hero-desc">
+      每天都有新作品、新创意、新榜单。<span>51视频每日大赛</span>聚集了短视频创作者、内容爱好者与行业观察者，
+      在这里追踪每日参赛作品、了解大赛规则、发现优质内容趋势。
+    </p>
+    <div class="search-bar">
+      <input type="text" placeholder="搜索今日大赛作品、创作者或参赛主题…" aria-label="搜索每日大赛内容">
+      <button type="button">搜索</button>
+    </div>
+    <div class="hero-tags">
+      <a href="/#hot-recommend">今日热门</a>
+      <a href="/#latest-update">最新上榜</a>
+      <a href="/#category">创意赛道</a>
+      <a href="/#deep-analysis">大赛观察</a>
+      <a href="/#faq">参赛答疑</a>
+      <a href="/#news">大赛动态</a>
+      <a href="/#comments">观众讨论</a>
+      <a href="/#subscribe">每日订阅</a>
+    </div>
+  </div>
+</header>
+
+<!-- 内容简介 / 平台介绍 -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="article-box">
+      <h2>关于 51视频每日大赛：每天一场创意竞技</h2>
+      <p>
+        <strong>51视频每日大赛</strong>是一个以“每日”为节奏的短视频创作竞技内容聚合专题。无论你是参赛创作者、内容爱好者，还是希望快速了解短视频创意趋势的观众，这个页面都能帮你用最短时间掌握每日大赛的核心信息。短视频大赛的吸引力在于“短周期、强反馈、高密度创意”，而每日大赛把这种节奏压缩到一天之内，让创意碰撞更加集中。
+      </p>
+      <p>
+        在这里，你可以看到每天更新的参赛作品推荐、热门选题方向、创作者表现分析以及大赛榜单变化。对于刚接触<strong>51视频每日大赛</strong>的用户来说，最常问的往往是“今天有什么值得看”“参赛作品都围绕什么主题”“哪些创作者表现突出”。本页通过结构化梳理，把大赛的看点、参与方式和内容趋势整合在一起，减少你在海量信息中筛选的时间。
+      </p>
+      <p>
+        页面内容适合以下人群：关注短视频创作趋势的内容从业者、希望参与每日大赛但还在观望的创作者、喜欢发现新鲜创意的普通观众，以及需要了解每日大赛规则与动态的行业观察者。无论你处于哪个阶段，都能从热门推荐、深度解析、FAQ 和用户评论中找到有价值的信息。建议收藏本页，每天花几分钟即可跟上<strong>51视频每日大赛</strong>的最新节奏。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 热门内容推荐 -->
+<section class="section" id="hot-recommend">
+  <div class="container">
+    <div class="section-header">
+      <h2>今日大赛热门作品推荐</h2>
+      <a href="/#hot-recommend" class="more-link">查看全部 →</a>
+    </div>
+    <p class="section-sub">根据11月7日大赛实时数据整理，涵盖创意剧情、生活记录、技术流、搞笑反转等多个赛道，排名不分先后。</p>
+    <div class="card-grid">
+      <article class="card">
+        <div class="card-cover grad-1"><span class="badge">热度 98.2</span>反转人生·第8号作品</div>
+        <div class="card-body">
+          <h3>反转人生·第8号作品</h3>
+          <p>30秒内完成三次剧情反转，结尾留白引发评论区大量二创讨论。拍摄手法干净，节奏控制是今日大赛中较为突出的作品。</p>
+          <div class="card-meta">
+            <span class="tag">创意剧情</span>
+            <span class="tag">高能反转</span>
+            <span class="hot">🔥 今日必看</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-2"><span class="badge">热度 95.6</span>城市夜行者·光影记录</div>
+        <div class="card-body">
+          <h3>城市夜行者·光影记录</h3>
+          <p>用手机拍摄城市夜景的移动镜头，配合环境音与轻电子配乐，呈现了较好的氛围感。适合喜欢生活记录和视觉美感的观众。</p>
+          <div class="card-meta">
+            <span class="tag">生活记录</span>
+            <span class="tag">城市夜景</span>
+            <span class="hot">🔥 视觉推荐</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-3"><span class="badge">热度 93.1</span>办公室の小确幸</div>
+        <div class="card-body">
+          <h3>办公室の小确幸</h3>
+          <p>以工位为舞台的轻喜剧短剧，用夸张表演放大职场日常细节，引发大量上班族共鸣。评论区互动率持续走高。</p>
+          <div class="card-meta">
+            <span class="tag">搞笑短剧</span>
+            <span class="tag">职场共鸣</span>
+            <span class="hot">🔥 讨论度高</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-4"><span class="badge">热度 91.4</span>零基础也能做的三道快手菜</div>
+        <div class="card-body">
+          <h3>零基础也能做的三道快手菜</h3>
+          <p>步骤清晰、镜头利落，没有多余口播，适合想学做菜又怕麻烦的观众。今日大赛美食赛道中完成度较高的一条。</p>
+          <div class="card-meta">
+            <span class="tag">美食教程</span>
+            <span class="tag">零基础</span>
+            <span class="hot">🔥 实用向</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-5"><span class="badge">热度 89.7</span>手绘动画：一只猫的24小时</div>
+        <div class="card-body">
+          <h3>手绘动画：一只猫的24小时</h3>
+          <p>逐帧手绘风格，讲述一只猫从清晨到深夜的日常。画风治愈，细节丰富，在动画赛道中辨识度较高，适合慢节奏观众。</p>
+          <div class="card-meta">
+            <span class="tag">手绘动画</span>
+            <span class="tag">治愈系</span>
+            <span class="hot">🔥 编辑推荐</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-6"><span class="badge">热度 87.9</span>街头采访：你最近一次哭是什么时候</div>
+        <div class="card-body">
+          <h3>街头采访：你最近一次哭是什么时候</h3>
+          <p>选题贴近真实情感，剪辑克制不煽情，受访者的回答呈现了不同年龄层的情绪切片。采访类作品中的口碑之作。</p>
+          <div class="card-meta">
+            <span class="tag">街头采访</span>
+            <span class="tag">情感共鸣</span>
+            <span class="hot">🔥 口碑推荐</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-7"><span class="badge">热度 86.3</span>30秒学会运镜：跟拍稳定技巧</div>
+        <div class="card-body">
+          <h3>30秒学会运镜：跟拍稳定技巧</h3>
+          <p>纯干货型短视频，用对比画面直观展示稳定器使用前后的差异，适合刚接触拍摄的创作者学习参考。</p>
+          <div class="card-meta">
+            <span class="tag">拍摄技巧</span>
+            <span class="tag">运镜教学</span>
+            <span class="hot">🔥 干货向</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-8"><span class="badge">热度 84.5</span>旧物改造：把牛仔裤变成收纳袋</div>
+        <div class="card-body">
+          <h3>旧物改造：把牛仔裤变成收纳袋</h3>
+          <p>环保主题的手工改造内容，过程完整、成品实用，评论区有不少人晒出自己的改造作品，互动氛围较好。</p>
+          <div class="card-meta">
+            <span class="tag">手工DIY</span>
+            <span class="tag">旧物改造</span>
+            <span class="hot">🔥 互动活跃</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-cover grad-9"><span class="badge">热度 82.8</span>方言挑战：用家乡话读诗</div>
+        <div class="card-body">
+          <h3>方言挑战：用家乡话读诗</h3>
+          <p>由参赛者发起的方言朗读挑战，用各地方言演绎同一首诗，趣味性强，评论区自发形成了方言接龙。</p>
+          <div class="card-meta">
+            <span class="tag">方言挑战</span>
+            <span class="tag">趣味互动</span>
+            <span class="hot">🔥 话题向</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 / 热播动态 -->
+<section class="section" id="latest-update" style="background: var(--surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>每日大赛最新动态</h2>
+      <a href="/#latest-update" class="more-link">更多更新 →</a>
+    </div>
+    <p class="section-sub">以下为2026年11月7日当天实时更新的参赛动态与赛况摘要。</p>
+    <div class="update-list">
+      <div class="update-item">
+        <span class="update-time">11-07 18:32</span>
+        <span class="update-title">“反转人生”系列第三集上线</span>
+        <span class="update-summary">延续前两集的高能反转风格，本集加入双线叙事结构，上线2小时进入今日大赛热度前三。</span>
+        <span class="update-badge">新作品</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 17:15</span>
+        <span class="update-title">美食赛道今日参赛量突破1200条</span>
+        <span class="update-summary">快手菜和一人食主题明显增多，零基础教程类作品平均完播率高于其他类型。</span>
+        <span class="update-badge">赛况</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 16:40</span>
+        <span class="update-title">手绘动画《一只猫的24小时》获编辑推荐</span>
+        <span class="update-summary">官方编辑在今日大赛专题中推荐了该作品，认为其“在短时长内完成了完整情绪表达”。</span>
+        <span class="update-badge">推荐</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 15:08</span>
+        <span class="update-title">方言挑战话题参与人数持续上升</span>
+        <span class="update-summary">由参赛者自发形成的方言朗读挑战已吸引超过300位创作者参与，评论区互动量较高。</span>
+        <span class="update-badge">话题</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 13:22</span>
+        <span class="update-title">街头采访类作品《你最近一次哭是什么时候》进入口碑榜</span>
+        <span class="update-summary">该作品以克制的情感表达获得较多正面评价，今日大赛情感赛道排名上升至第五位。</span>
+        <span class="update-badge">口碑</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 11:50</span>
+        <span class="update-title">运镜教学类内容今日增长明显</span>
+        <span class="update-summary">随着手机拍摄门槛降低，30秒技巧类短视频参赛数量较昨日增长约40%，实用型内容受关注。</span>
+        <span class="update-badge">趋势</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 10:15</span>
+        <span class="update-title">旧物改造赛道新增环保主题子分类</span>
+        <span class="update-summary">大赛分类页面新增“环保手工”标签，方便观众按兴趣筛选相关参赛作品。</span>
+        <span class="update-badge">分类</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-07 09:30</span>
+        <span class="update-title">今日大赛选题指南已更新</span>
+        <span class="update-summary">页面新增“今日推荐选题”入口，涵盖生活记录、创意剧情、知识分享等六个方向。</span>
+        <span class="update-badge">指南</span>
+      </div>
+      <div class="update-item">
+        <span class="update-time">11-06 22:10</span>
+        <span class="update-title">昨晚“办公室の小确幸”单条评论破800</span>
+        <span class="update-summary">该作品以职场轻喜剧风格引发大量上班族共鸣，评论区讨论延伸至“工位文化”话题。</span>
+        <span class="update-badge">互动</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="section" id="category">
+  <div class="container">
+    <div class="section-header">
+      <h2>大赛分类入口</h2>
+      <a href="/#category" class="more-link">全部分类 →</a>
+    </div>
+    <p class="section-sub">按创意赛道快速筛选今日大赛作品，找到你感兴趣的内容方向。</p>
+    <div class="cat-grid">
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">🎬</span>
+        <div class="cat-name">创意剧情</div>
+        <div class="cat-count">今日 386 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">📷</span>
+        <div class="cat-name">生活记录</div>
+        <div class="cat-count">今日 512 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">😂</span>
+        <div class="cat-name">搞笑短剧</div>
+        <div class="cat-count">今日 274 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">🍳</span>
+        <div class="cat-name">美食教程</div>
+        <div class="cat-count">今日 198 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">🎨</span>
+        <div class="cat-name">动画手绘</div>
+        <div class="cat-count">今日 156 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">🎤</span>
+        <div class="cat-name">街头采访</div>
+        <div class="cat-count">今日 132 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">📱</span>
+        <div class="cat-name">拍摄技巧</div>
+        <div class="cat-count">今日 245 条参赛</div>
+      </a>
+      <a href="/#hot-recommend" class="cat-item">
+        <span class="cat-icon">🧵</span>
+        <div class="cat-name">手工DIY</div>
+        <div class="cat-count">今日 167 条参赛</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析正文 -->
+<section class="section" id="deep-analysis" style="background: var(--surface-alt);">
+  <div class="container">
+    <div class="article-box">
+      <h2>51视频每日大赛深度解析：每日竞技背后的创作逻辑</h2>
+      <p>
+        <strong>51视频每日大赛</strong>的核心吸引力，在于它把“短视频创作”从个人表达变成了一场每天上演的公开竞技。与传统视频比赛按周或按月评选不同，每日大赛的节奏更快、反馈更直接，参赛者需要在有限时间内完成选题、拍摄和剪辑，而观众则可以在一天之内看到大量风格各异的作品。这种高密度、短周期的模式，让每日大赛天然具备了“话题制造”和“创意筛选”的双重功能。
+      </p>
+      <h3>题材与类型：每日大赛的创意分布</h3>
+      <p>
+        从今日大赛的参赛结构来看，<strong>生活记录类</strong>作品数量最多，这与短视频创作门槛较低、素材获取方便有关。其次是创意剧情和搞笑短剧，这两类内容对脚本和表演有一定要求，但一旦完成度较高，就很容易在评论区引发讨论。美食教程、动画手绘、街头采访和拍摄技巧类作品虽然数量相对较少，但垂直度更高，受众粘性也更强。值得一提的是，今日大赛中“方言挑战”这类由参赛者自发形成的话题，正在成为每日大赛中一种新的参与方式——它不依赖官方命题，而是由创作者之间互相激发。
+      </p>
+      <h3>内容吸引点：为什么这些作品能脱颖而出</h3>
+      <p>
+        观察今日大赛的热门作品，可以发现几个共同特征。第一是<strong>前3秒的钩子</strong>：无论是“反转人生”的悬疑开场，还是“办公室の小确幸”的夸张表情，都在极短时间内抓住了观众注意力。第二是<strong>情绪落点清晰</strong>：街头采访《你最近一次哭是什么时候》之所以获得口碑，不是因为制作多复杂，而是因为它在30秒内完成了一次真实的情感触达。第三是<strong>信息密度合理</strong>：像运镜教学、快手菜教程这类实用内容，没有多余铺垫，直接给出可复用的方法，反而更容易被收藏和转发。
+      </p>
+      <h3>创作者表现与节奏把控</h3>
+      <p>
+        在<strong>51视频每日大赛</strong>中，创作者的“日更能力”本身就是一种竞争力。今日表现突出的创作者，往往不是单条作品最精致的，而是能够在稳定更新中保持风格统一的。例如“反转人生”系列连续三集都维持了较高的完成度，这种系列化运营思路在每日大赛中越来越常见。另一方面，大赛的节奏也要求创作者学会“快速试错”——不是每条作品都要追求爆款，而是通过高频参赛来测试选题方向、调整表达方式。对于观众来说，关注每日大赛的最大乐趣，也在于可以看到一个创作者在连续参赛中的成长轨迹。
+      </p>
+      <h3>适合人群与消费建议</h3>
+      <p>
+        如果你只是想找点有意思的内容打发时间，建议从<strong>热门推荐</strong>和<strong>最新动态</strong>入手，今日大赛中创意剧情和搞笑短剧的“爽感”最强。如果你是短视频创作者，可以重点关注拍摄技巧、运镜教学和参赛者的选题思路，把每日大赛当作一个免费的创意参考库。如果你对某个垂直领域感兴趣，分类入口可以帮你快速筛选，比如美食教程、手工DIY或动画手绘。总体而言，<strong>51视频每日大赛</strong>的内容生态已经覆盖了从娱乐消费到学习参考的多个层次，不同需求的用户都能找到自己的入口。
+      </p>
+      <p>
+        最后需要提醒的是，每日大赛的作品质量存在正常波动，不是每一天都有“神作”出现。建议以“浏览趋势、发现惊喜”的心态来消费内容，而不是对每条作品都抱有过高期待。真正有价值的，是透过每日大赛看到短视频创意的流动方向——今天哪些选题在升温、哪些表达方式在退化、哪些创作者在形成自己的语言。这才是<strong>51视频每日大赛</strong>作为内容专题页最值得长期关注的部分。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="section" id="guide">
+  <div class="container">
+    <div class="section-header">
+      <h2>浏览与参赛体验指南</h2>
+    </div>
+    <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="card" style="padding: 24px; display: block;">
+        <h3 style="font-size: 1.05rem; margin-bottom: 10px;">📌 页面结构清晰</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">本页从热门推荐到深度解析，按照“先看什么、再看什么”的阅读逻辑排列。首次访问建议先浏览首屏下方的大赛简介，再进入热门推荐和最新动态，快速建立对<strong>51视频每日大赛</strong>的整体认知。</p>
+      </div>
+      <div class="card" style="padding: 24px; display: block;">
+        <h3 style="font-size: 1.05rem; margin-bottom: 10px;">🔍 分类筛选方便</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">如果你有明确的兴趣方向，可以直接使用分类入口。每个分类都标注了今日参赛数量，方便判断内容供给量。分类链接均为页面内锚点，点击后快速定位对应模块。</p>
+      </div>
+      <div class="card" style="padding: 24px; display: block;">
+        <h3 style="font-size: 1.05rem; margin-bottom: 10px;">📱 移动端友好</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">页面采用响应式布局，在手机上会自动调整为单栏阅读模式。推荐卡片、更新列表和评论区在移动端均保持可读性和点击便利性，适合通勤或碎片时间浏览每日大赛动态。</p>
+      </div>
+      <div class="card" style="padding: 24px; display: block;">
+        <h3 style="font-size: 1.05rem; margin-bottom: 10px;">⭐ 适合追更与收藏</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">每日大赛每天都有新内容，建议将本页加入浏览器收藏夹，或通过订阅区获取更新提醒。长期关注可以观察到选题趋势和创作者状态的变化，比单次浏览更有参考价值。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background: var(--surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>51视频每日大赛常见问题</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>51视频每日大赛是什么？每天都有比赛吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          51视频每日大赛是一个以“每日”为周期的短视频创作主题聚合专题。它并非传统意义上需要报名审核的正式比赛，而是围绕每日参赛作品形成的内容竞技场。每天都会有大量创作者提交不同题材的短视频，页面会根据热度和编辑推荐进行整理呈现。对于普通观众来说，可以把它理解为“每天更新一次的优质短视频精选集”，重点在于快速发现当日值得看的创意内容。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>如何参与51视频每日大赛？需要什么条件？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          参与每日大赛通常没有严格的门槛，核心是围绕当日或近期的选题方向创作一条短视频并提交至对应通道。建议先观察几天每日大赛的热门作品，了解当前流行的题材、时长和表达方式，再确定自己的参赛方向。对于新手来说，从生活记录、美食教程或拍摄技巧类入手相对友好，因为这些类型对设备和表演要求较低，重点在于信息传递的清晰度。具体提交方式和规则请以平台当日公告为准。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>今日大赛有哪些值得优先观看的作品类型？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          如果你时间有限，建议优先看三类：一是创意剧情类，通常节奏快、反转多，娱乐性最强；二是街头采访或情感类作品，虽然制作简单但容易引发共鸣；三是实用教程类，比如运镜技巧、快手菜教程，看完能马上用上。当然，每日大赛的推荐本身就是一种筛选，热门推荐和编辑推荐两个模块基本覆盖了当天完成度较高的作品。如果只想随便看看，从热门推荐的前三条开始即可。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>每日大赛的排名是怎么产生的？热度高就一定好看吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          每日大赛的热度通常综合了播放量、互动量、完播率和编辑推荐等多个维度，并不单纯看播放数字。热度高说明作品在传播层面表现较好，但不完全等同于“符合你的口味”。建议把热度作为参考而非唯一标准，结合自己的兴趣分类去筛选。事实上，每日大赛中不少垂直领域的优质作品热度并不顶尖，但针对性更强，比如动画手绘或手工DIY类，受众面窄但忠实度高。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>如果我想持续关注每日大赛，有什么建议？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          最直接的方式是收藏本页，每天花3到5分钟浏览“每日大赛最新动态”模块，了解当天新增作品和赛况变化。如果你有特定的兴趣赛道，可以使用分类入口快速定位。另外，关注你喜欢的创作者在每日大赛中的连续表现，比单条作品更有信息量——可以看到他们的选题变化和风格成长。订阅区提供更新提醒功能，适合不想每天手动刷新页面的用户。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>51视频每日大赛和普通的短视频推荐有什么区别？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-a">
+          普通短视频推荐通常基于算法对你个人偏好的推测，而51视频每日大赛更强调“公共赛道”和“当日横截面”。也就是说，每日大赛展示的是同一天内、围绕相似命题或同一平台生态产出的作品集合，方便你横向比较不同创作者的表达方式。这种结构化的呈现方式，更适合想了解“当下大家在拍什么”的用户，也更容易发现趋势性的变化，而不是被算法困在信息茧房里。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section class="section" id="comments">
+  <div class="container">
+    <div class="section-header">
+      <h2>观众与创作者讨论区</h2>
+      <span style="font-size:0.8rem; color:var(--text-muted);">近30天评论精选</span>
+    </div>
+    <div class="comment-grid">
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a1">小</span>
+          <span class="comment-name">小鹿不迷路</span>
+          <span class="comment-date">11-06</span>
+        </div>
+        <p class="comment-text">今天反转人生第三集确实可以，双线叙事在30秒里讲清楚不容易，结尾还留了钩子。不过感觉第二集节奏更好一点，这集稍微有点赶。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a2">光</span>
+          <span class="comment-name">光影拾荒者</span>
+          <span class="comment-date">11-05</span>
+        </div>
+        <p class="comment-text">城市夜行者那个运镜很舒服，手机能拍出这种水平说明基本功扎实。就是配乐稍微有点抢，环境音再突出一点会更有沉浸感。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a3">阿</span>
+          <span class="comment-name">阿茶今天更了吗</span>
+          <span class="comment-date">11-07</span>
+        </div>
+        <p class="comment-text">办公室小确幸真的笑死，工位那个镜头太真实了。希望作者能做成系列，每天下班看一条解压刚好。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a4">麦</span>
+          <span class="comment-name">麦片不加糖</span>
+          <span class="comment-date">11-04</span>
+        </div>
+        <p class="comment-text">快手菜教程收藏了，步骤是真的简洁，没有废话。不过希望下次能标注一下食材大概用量，第一次做有点拿不准。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a5">猫</span>
+          <span class="comment-name">猫猫头鹰</span>
+          <span class="comment-date">11-06</span>
+        </div>
+        <p class="comment-text">手绘动画那个猫的一天画得真好，细节特别多，看了两遍才发现背景里还有小鱼干。这种慢节奏的每天大赛里不多见，且看且珍惜。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a6">南</span>
+          <span class="comment-name">南城旧巷</span>
+          <span class="comment-date">11-03</span>
+        </div>
+        <p class="comment-text">街头采访那个选题很好，但剪辑稍微有点碎，有几个回答没说完就切了。不过整体还是很打动人的，比那些刻意煽情的强很多。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a7">运</span>
+          <span class="comment-name">运镜初学者</span>
+          <span class="comment-date">11-07</span>
+        </div>
+        <p class="comment-text">跟着今天的运镜教学试了一下，确实稳了很多。每日大赛里这种干货类的内容虽然热度不是最高，但对我这种新手最实用。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a8">旧</span>
+          <span class="comment-name">旧物新语</span>
+          <span class="comment-date">11-02</span>
+        </div>
+        <p class="comment-text">牛仔裤改收纳袋那个我跟着做了，成品还行但没up主做得好看。希望以后能出个慢速版，细节步骤再细一点。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a9">方</span>
+          <span class="comment-name">方言十级选手</span>
+          <span class="comment-date">11-05</span>
+        </div>
+        <p class="comment-text">方言挑战太好玩了，评论区已经变成方言大会了。这种由参赛者自己发起的话题比官方命题有意思多了，希望能多来点。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a10">路</span>
+          <span class="comment-name">路人甲不太冷</span>
+          <span class="comment-date">11-01</span>
+        </div>
+        <p class="comment-text">说实话今天整体质量一般，可能是我期待太高了。热门里有两三条感觉是赶工出来的，也就反转人生和夜行者能看。明天再看看。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a11">小</span>
+          <span class="comment-name">小满未满</span>
+          <span class="comment-date">11-06</span>
+        </div>
+        <p class="comment-text">每日大赛最大的好处就是能看到不同风格的创作者同台，有种开盲盒的感觉。今天最喜欢手绘动画，明天不知道会有什么惊喜。</p>
+      </div>
+      <div class="comment-card">
+        <div class="comment-head">
+          <span class="avatar a12">创</span>
+          <span class="comment-name">创作进行时</span>
+          <span class="comment-date">11-07</span>
+        </div>
+        <p class="comment-text">作为参赛者说一句，每日大赛的节奏确实快，有时候为了赶当天提交会牺牲质量。建议新参赛的朋友不用每天都追，找到自己的节奏更重要。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="section" id="news" style="background: var(--surface-alt);">
+  <div class="container">
+    <div class="section-header">
+      <h2>51视频每日大赛相关资讯</h2>
+      <a href="/#news" class="more-link">更多资讯 →</a>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-date">2026-11-07</div>
+        <h4>今日大赛选题风向：生活记录类占比继续上升</h4>
+        <p>从11月7日参赛数据来看，生活记录类作品占比较上周同期增长约12%，其中城市夜景、通勤日常成为高频选题。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-date">2026-11-06</div>
+        <h4>“反转人生”系列作者确认将连续参赛一周</h4>
+        <p>该系列作者在评论区透露，计划连续七天更新不同主题的反转短剧，目前前三集均进入每日大赛热门推荐。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-date">2026-11-05</div>
+        <h4>每日大赛新增“环保手工”子分类标签</h4>
+        <p>为方便观众筛选，大赛分类页面新增环保手工相关标签，旧物改造、废品再利用类作品将集中展示。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-date">2026-11-04</div>
+        <h4>方言挑战话题参与人数突破300，评论区自发接龙</h4>
+        <p>由参赛者发起的方言朗读挑战持续升温，目前已有超过300位创作者参与，相关作品总互动量较昨日翻倍。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-date">2026-11-03</div>
+        <h4>编辑观察：实用教程类作品收藏率明显高于平均值</h4>
+        <p>运镜教学、快手菜教程等实用向内容在每日大赛中收藏率突出，虽然热度排名不是最高，但长尾价值较好。</p>
+      </div>
+      <div class="news-card">
+        <div class="news-date">2026-11-02</div>
+        <h4>每日大赛移动端浏览占比超七成，碎片化消费成主流</h4>
+        <p>根据页面访问数据，超过七成用户通过手机浏览每日大赛内容，通勤时段和睡前时段为两个明显的高峰。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 订阅引导 -->
+<section class="section" id="subscribe">
+  <div class="container">
+    <div class="subscribe-box">
+      <div>
+        <h2>不错过每一天的大赛精彩</h2>
+        <p>留下邮箱，获取51视频每日大赛的每日精选推荐与赛况摘要。只推有用的，不频繁打扰。</p>
+      </div>
+      <form class="subscribe-form" onsubmit="return false;">
+        <input type="email" placeholder="你的邮箱地址" aria-label="邮箱地址">
+        <button type="submit">订阅每日大赛</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="logo-mark">51</span>
+          51视频每日大赛
+        </div>
+        <p class="footer-desc">每日短视频创作竞技内容聚合专题，追踪热门作品、赛况动态与创意趋势。内容仅供浏览参考，作品版权归原作者所有。</p>
+      </div>
+      <div>
+        <h5>快速导航</h5>
+        <ul>
+          <li><a href="/#hot-recommend">热门推荐</a></li>
+          <li><a href="/#latest-update">最新动态</a></li>
+          <li><a href="/#category">分类入口</a></li>
+          <li><a href="/#deep-analysis">深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>帮助与支持</h5>
+        <ul>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">大赛资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>友情链接</h5>
+        <ul>
+          <li><a href="/#home">内容首页</a></li>
+          <li><a href="/#subscribe">订阅更新</a></li>
+          <li><a href="/#about">关于大赛</a></li>
+          <li><a href="/#category">赛道索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 51视频每日大赛 · 内容专题页 · 仅供学习与浏览参考</span>
+      <div class="links">
+        <a href="/#about">免责声明</a>
+        <a href="/#faq">版权说明</a>
+        <a href="/#subscribe">联系订阅</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // FAQ手风琴
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      faqItems.forEach(function(other){
+        other.classList.remove('open');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+      }
+    });
+  });
+  // 默认展开第一个FAQ
+  if(faqItems.length > 0){
+    faqItems[0].classList.add('open');
+  }
+
+  // 移动端导航切换（简单处理：小屏点击logo区域不处理，保留导航隐藏）
+  // 这里不添加额外交互，保持页面纯净
+})();
+</script>
+</body>
+        </html>
