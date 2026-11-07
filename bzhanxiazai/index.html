@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>b站下载-哔哩哔哩视频下载方法与工具_缓存_离线观看_格式转换</title>
+<meta name="description" content="b站下载专题汇总哔哩哔哩视频下载、缓存、离线观看的实用方法与工具对比，讲清画质、格式、会员限制和注意事项，覆盖移动端与电脑端不同场景，帮你找到适合自己的b站下载方案。">
+<meta name="keywords" content="b站下载,哔哩哔哩视频下载,b站视频缓存,离线观看,视频格式转换">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e8608a'/%3E%3Cpath d='M20 26h24v16a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z' fill='%23fff'/%3E%3Cpath d='M22 20l6 6M42 20l-6 6' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --pk:#e8608a;
+  --pk-d:#c8446c;
+  --pk-l:#fdeef3;
+  --ink:#25222a;
+  --ink2:#5d5763;
+  --ink3:#8b8492;
+  --line:#efe7ec;
+  --bg:#fdf8fa;
+  --card:#ffffff;
+  --ok:#2fa87a;
+  --warn:#e08b2b;
+  --r:16px;
+  --sh:0 4px 18px rgba(180,120,145,.10);
+  --sh2:0 10px 30px rgba(180,120,145,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;
+  font-size:15px;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+h1,h2,h3,h4{line-height:1.35;font-weight:800}
+h2{font-size:23px;margin-bottom:6px}
+h3{font-size:17px}
+.sec{padding:38px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head p{color:var(--ink3);font-size:13.5px;margin-top:4px}
+.sec-tag{display:inline-block;font-size:12px;color:var(--pk-d);background:var(--pk-l);padding:3px 10px;border-radius:20px;font-weight:700;letter-spacing:.5px}
+.more{font-size:13px;color:var(--pk-d);font-weight:700;border-bottom:1px dashed var(--pk);padding-bottom:1px}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 18px;height:62px;display:flex;align-items:center;gap:22px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:18px;color:var(--pk-d);flex-shrink:0}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--pk),#f7a6c0);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-style:normal;font-size:15px;font-weight:900}
+.nav-links{display:flex;gap:18px;font-size:14px;color:var(--ink2);font-weight:600;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a:hover{color:var(--pk-d)}
+.nav-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--pk-l);border-radius:22px;padding:6px 14px;min-width:180px}
+.nav-search input{border:0;background:transparent;outline:0;font-size:13px;width:100%;color:var(--ink)}
+.nav-search input::placeholder{color:#bda9b3}
+/* banner */
+.hero{background:linear-gradient(150deg,#fdeef3 0%,#f7f0fb 55%,#eef6fb 100%);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-60px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(232,96,138,.22),transparent 68%)}
+.hero-in{max-width:1200px;margin:0 auto;padding:48px 18px 44px;display:grid;grid-template-columns:1.35fr .85fr;gap:36px;position:relative;z-index:2;align-items:center}
+.hero h1{font-size:36px;letter-spacing:-.5px;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--pk-d)}
+.hero p.lead{color:var(--ink2);font-size:15.5px;margin-bottom:8px;max-width:560px}
+.hero .searchbar{display:flex;gap:8px;margin:22px 0 16px;max-width:520px}
+.hero .searchbar input{flex:1;border:1px solid var(--line);background:#fff;border-radius:11px;padding:12px 16px;font-size:14px;outline:0;box-shadow:var(--sh)}
+.hero .searchbar input:focus{border-color:var(--pk)}
+.hero .searchbar button{border:0;background:linear-gradient(135deg,var(--pk),#f4819f);color:#fff;font-weight:800;padding:0 22px;border-radius:11px;font-size:14px;cursor:pointer;box-shadow:var(--sh)}
+.hero .searchbar button:hover{filter:brightness(1.05)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{font-size:12.5px;background:rgba(255,255,255,.8);border:1px solid var(--line);color:var(--ink2);padding:5px 12px;border-radius:20px;font-weight:600;transition:.2s}
+.chips a:hover{background:#fff;color:var(--pk-d);border-color:var(--pk);transform:translateY(-1px)}
+.hero-side{background:#fff;border-radius:20px;padding:20px;box-shadow:var(--sh2);border:1px solid var(--line)}
+.hero-side h3{font-size:15px;margin-bottom:12px;color:var(--ink)}
+.hs-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.hs-row:last-child{border-bottom:0}
+.hs-row span:first-child{color:var(--ink2)}
+.hs-row b{color:var(--pk-d);font-weight:800}
+/* grid cards */
+.g-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.g-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.g-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);border:1px solid var(--line);transition:.22s;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.card-body{padding:16px 18px}
+.card-cover{height:118px;background:linear-gradient(135deg,#fbd7e3,#e3d4f7 60%,#d3ecf9);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:15px;letter-spacing:1px;text-shadow:0 2px 8px rgba(140,90,120,.28)}
+.card-cover.v2{background:linear-gradient(135deg,#ffd9c8,#f7b6cf)}
+.card-cover.v3{background:linear-gradient(135deg,#cfe6f9,#d8c8f5)}
+.card-cover.v4{background:linear-gradient(135deg,#d6f2e3,#cce7f7)}
+.card-cover.v5{background:linear-gradient(135deg,#ffe3bb,#f9c3d7)}
+.card-cover.v6{background:linear-gradient(135deg,#dcd2f7,#bfe3f3)}
+.card h3{font-size:15.5px;margin-bottom:6px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.tag{font-size:11.5px;background:var(--pk-l);color:var(--pk-d);padding:2px 9px;border-radius:14px;font-weight:700}
+.tag.gray{background:#f3f1f5;color:var(--ink3)}
+.card .desc{font-size:13px;color:var(--ink2);line-height:1.7}
+.card .meta{display:flex;gap:14px;font-size:12px;color:var(--ink3);margin-top:11px;padding-top:10px;border-top:1px dashed var(--line)}
+.card .meta b{color:var(--pk-d)}
+/* update list */
+.upd-list{background:#fff;border-radius:var(--r);border:1px solid var(--line);box-shadow:var(--sh);overflow:hidden}
+.upd-item{display:grid;grid-template-columns:64px 1fr auto;gap:14px;padding:14px 18px;border-bottom:1px solid var(--line);align-items:center;transition:.18s}
+.upd-item:last-child{border-bottom:0}
+.upd-item:hover{background:var(--pk-l)}
+.upd-date{font-size:12px;color:var(--ink3);font-weight:700;text-align:center;line-height:1.4}
+.upd-date b{display:block;font-size:17px;color:var(--pk-d)}
+.upd-item h4{font-size:14.5px;margin-bottom:3px}
+.upd-item p{font-size:12.5px;color:var(--ink2)}
+.upd-badge{font-size:11.5px;font-weight:800;padding:3px 10px;border-radius:14px;background:var(--pk-l);color:var(--pk-d);white-space:nowrap}
+.upd-badge.new{background:#e6f7ef;color:var(--ok)}
+.upd-badge.wait{background:#fdf1e2;color:var(--warn)}
+/* cats */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:12px;align-items:center;box-shadow:var(--sh);transition:.2s}
+.cat:hover{transform:translateY(-3px);border-color:var(--pk);box-shadow:var(--sh2)}
+.cat i{width:40px;height:40px;border-radius:11px;background:var(--pk-l);color:var(--pk-d);display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:900;font-size:15px;flex-shrink:0}
+.cat b{display:block;font-size:14px}
+.cat small{font-size:11.5px;color:var(--ink3)}
+/* article */
+.article{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:30px 34px}
+.article h2{margin-bottom:14px}
+.article h3{margin:24px 0 9px;color:var(--pk-d);font-size:17.5px;padding-left:11px;border-left:4px solid var(--pk)}
+.article p{color:var(--ink2);margin-bottom:13px;font-size:14.5px;line-height:1.85}
+.article strong{color:var(--ink)}
+.article ul{margin:6px 0 14px 20px;color:var(--ink2);font-size:14.5px}
+.article li{margin-bottom:7px}
+.note{background:var(--pk-l);border-radius:12px;padding:15px 18px;font-size:13.5px;color:var(--pk-d);font-weight:600;margin:18px 0}
+/* guide */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--sh)}
+.guide b{display:flex;align-items:center;gap:9px;font-size:15px;margin-bottom:8px;color:var(--ink)}
+.guide b i{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--pk),#f7a6c0);color:#fff;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
+.guide p{font-size:13px;color:var(--ink2);line-height:1.75}
+/* faq */
+.faq{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;padding:16px 20px;font-weight:700;font-size:14.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;transition:.18s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--pk-d);font-weight:900;font-size:19px;transition:.25s;flex-shrink:0}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{background:var(--pk-l)}
+.faq .fa-body{padding:0 20px 18px;font-size:13.5px;color:var(--ink2);line-height:1.85}
+/* comments */
+.cm-item{display:flex;gap:12px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.cm-item:last-child{border-bottom:0}
+.cm-av{width:38px;height:38px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:14px}
+.cm-main{flex:1}
+.cm-top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:2px}
+.cm-top b{font-size:13.5px}
+.cm-top small{font-size:11.5px;color:var(--ink3)}
+.cm-text{font-size:13.5px;color:var(--ink2);line-height:1.75}
+.cm-like{font-size:11.5px;color:var(--ink3);margin-top:5px}
+/* news */
+.news{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--sh);transition:.2s}
+.news:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.news time{font-size:11.5px;color:var(--pk-d);font-weight:800;background:var(--pk-l);padding:2px 9px;border-radius:12px}
+.news h4{font-size:15px;margin:9px 0 7px}
+.news p{font-size:13px;color:var(--ink2);line-height:1.7}
+/* footer */
+footer{background:#2a252e;color:#c9c2d1;margin-top:20px;padding:40px 0 22px;font-size:13px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px;margin-bottom:26px}
+.foot-grid h5{color:#fff;font-size:14px;margin-bottom:12px;font-weight:800}
+.foot-grid a{display:block;color:#a89fb3;margin-bottom:7px;font-size:12.5px}
+.foot-grid a:hover{color:var(--pk)}
+.foot-grid p{color:#a89fb3;font-size:12.5px;line-height:1.8}
+.foot-bottom{border-top:1px solid #3b3444;padding-top:16px;text-align:center;color:#8f8799;font-size:12px;line-height:1.9}
+@media(max-width:980px){
+  .hero-in{grid-template-columns:1fr;gap:22px}
+  .hero h1{font-size:29px}
+  .g-3,.g-4,.cat-grid,.guide-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+@media(max-width:600px){
+  .g-3,.g-4,.g-2,.cat-grid,.guide-grid{grid-template-columns:1fr}
+  .hero h1{font-size:25px}
+  .article{padding:22px 18px}
+  .upd-item{grid-template-columns:50px 1fr;gap:10px}
+  .upd-badge{grid-column:2}
+  .sec{padding:28px 0}
+  .foot-grid{grid-template-columns:1fr}
+  .nav-search{min-width:0;flex:1}
+  .nav-search input{width:100px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav class="nav">
+  <div class="nav-in">
+    <a class="logo" href="/#home"><i>B</i>b站下载指南</a>
+    <div class="nav-links">
+      <a href="/#hot">热门推荐</a>
+      <a href="/#update">最新更新</a>
+      <a href="/#cat">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">相关资讯</a>
+    </div>
+    <div class="nav-search">
+      <input type="search" placeholder="搜索下载方法 / 工具 / 格式" aria-label="搜索">
+    </div>
+  </div>
+</nav>
+
+<!-- 首屏 Banner -->
+<header class="hero" id="home">
+  <div class="hero-in">
+    <div>
+      <span class="sec-tag">哔哩哔哩下载 · 方法合集</span>
+      <h1>b站下载：<em>哔哩哔哩视频下载</em>方法与离线观看全解析</h1>
+      <p class="lead">从手机缓存到电脑端保存，从画质选择到格式转换，把b站下载这件事讲清楚。</p>
+      <p class="lead">适合想收藏课程、保存二创、整理追番片单的你，按需找到自己的方案。</p>
+      <div class="searchbar">
+        <input type="search" placeholder="例如：b站下载怎么保存到相册" aria-label="站内搜索">
+        <button type="button">搜索</button>
+      </div>
+      <div class="chips">
+        <a href="/#cat">移动端缓存</a>
+        <a href="/#cat">电脑端保存</a>
+        <a href="/#deep">画质选择</a>
+        <a href="/#guide">格式转换</a>
+        <a href="/#faq">离线观看</a>
+        <a href="/#hot">收藏整理</a>
+        <a href="/#update">工具对比</a>
+        <a href="/#news">版本动态</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h3>当前专题速览</h3>
+      <div class="hs-row"><span>整理方法条目</span><b>26 条</b></div>
+      <div class="hs-row"><span>覆盖终端</span><b>手机 / 平板 / 电脑</b></div>
+      <div class="hs-row"><span>重点话题</span><b>缓存与离线</b></div>
+      <div class="hs-row"><span>内容更新</span><b>2026-11-07</b></div>
+      <div class="hs-row"><span>适合人群</span><b>学生 / 通勤党 / 课程党</b></div>
+    </aside>
+  </div>
+</header>
+
+<!-- 内容简介 -->
+<section class="sec" id="intro">
+  <div class="wrap">
+    <div class="article">
+      <h2>关于b站下载，这个页面能帮你解决什么</h2>
+      <p>很多人搜索<strong>b站下载</strong>，背后其实是很具体的需求：坐地铁没网想把视频留着看、课程视频想反复回放、喜欢的二创作品怕被删想存一份、追番时想把更新剧集一次性下好。哔哩哔哩本身提供了客户端缓存功能，但缓存和真正意义上的“下载保存”在文件位置、可用范围、清晰度上限上都有差别，这也是大部分疑问的来源。</p>
+      <p>本页面把b站下载拆成几条清晰的路径来讲：移动端的离线缓存、电脑端的本地保存、不同清晰度与会员权益的关系、下载后的格式与播放兼容问题，以及整理收藏时怎样减少重复劳动。你不需要从头读到尾，可以直接按自己的设备和用途跳到对应栏目。</p>
+      <p>内容更适合以下人群：经常通勤或出差、需要离线观看的人；把b站当作学习平台、要反复看课程和讲解视频的人；做剪辑或素材整理、需要本地文件的人；以及单纯想给自己喜欢的作品做一个备份的普通用户。我们同时会提醒哪些做法有版权顾虑、哪些操作可能因为客户端版本变化而失效，避免你照着过时教程白折腾。</p>
+      <p>值得收藏的原因是：b站下载相关的客户端功能、清晰度策略、会员权益会随版本调整，把这一页放进书签，遇到“缓存找不到”“下载后没声音”“清晰度和在线不一样”等问题时，可以快速对照排查，而不是重新搜索一堆零散答案。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 热门推荐 -->
+<section class="sec" id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>热门b站下载方案推荐</h2>
+        <p>按使用场景整理的常见做法，各有取舍，按需选择</p>
+      </div>
+      <a class="more" href="/#cat">查看分类入口</a>
+    </div>
+    <div class="g-3">
+
+      <article class="card">
+        <div class="card-cover">手机缓存</div>
+        <div class="card-body">
+          <h3>移动端离线缓存法</h3>
+          <div class="tags"><span class="tag">移动端</span><span class="tag gray">离线观看</span><span class="tag gray">最省事</span></div>
+          <p class="desc">在客户端内直接点缓存，选清晰度后自动下载，适合通勤、地铁、飞机等无网场景，缺点是文件只能在App内播放。</p>
+          <div class="meta"><span>难度 <b>低</b></span><span>适用 <b>手机/平板</b></span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover v2">电脑保存</div>
+        <div class="card-body">
+          <h3>电脑端本地保存思路</h3>
+          <div class="tags"><span class="tag">电脑端</span><span class="tag gray">素材整理</span><span class="tag gray">需工具</span></div>
+          <p class="desc">通过客户端缓存目录或第三方工具把视频落到本地，适合做素材、课件备份，注意清晰度上限和版权边界。</p>
+          <div class="meta"><span>难度 <b>中</b></span><span>适用 <b>Windows/Mac</b></span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover v3">画质选择</div>
+        <div class="card-body">
+          <h3>清晰度与会员权益对照</h3>
+          <div class="tags"><span class="tag">清晰度</span><span class="tag gray">会员</span><span class="tag gray">避坑</span></div>
+          <p class="desc">1080P高码率、4K、HDR等档位和账号权益相关，下载前先确认可用档位，避免下完发现不如预期。</p>
+          <div class="meta"><span>难度 <b>低</b></span><span>适用 <b>全终端</b></span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover v4">格式转换</div>
+        <div class="card-body">
+          <h3>下载后格式与播放兼容</h3>
+          <div class="tags"><span class="tag">格式转换</span><span class="tag gray">MP4</span><span class="tag gray">音画同步</span></div>
+          <p class="desc">缓存文件常见音视频分离结构，直接改后缀往往播不了，需要合并或转码，这里讲清常见坑位。</p>
+          <div class="meta"><span>难度 <b>中</b></span><span>适用 <b>电脑端</b></span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover v5">课程存档</div>
+        <div class="card-body">
+          <h3>学习类视频的b站下载整理</h3>
+          <div class="tags"><span class="tag">课程</span><span class="tag gray">笔记</span><span class="tag gray">分集管理</span></div>
+          <p class="desc">把合集课程按章节命名归档，配合笔记时间戳，复习效率明显提升，适合备考和技能学习人群。</p>
+          <div class="meta"><span>难度 <b>中</b></span><span>适用 <b>学生/职场</b></span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-cover v6">追番收藏</div>
+        <div class="card-body">
+          <h3>追番党的一集不落方案</h3>
+          <div class="tags"><span class="tag">番剧</span><span class="tag gray">更新追踪</span><span class="tag gray">离线缓存</span></div>
+          <p class="desc">新番更新节奏固定，提前缓存未看剧集，通勤路上补番，注意缓存有效期与账号登录状态。</p>
+          <div class="meta"><span>难度 <b>低</b></span><span>适用 <b>手机</b></span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 最新更新 -->
+<section class="sec" id="update">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>最新动态与更新追踪</h2>
+        <p>截至 2026 年 11 月 7 日，与b站下载相关的近期变化</p>
+      </div>
+      <a class="more" href="/#news">更多资讯</a>
+    </div>
+    <div class="upd-list">
+      <div class="upd-item">
+        <div class="upd-date">11-07<b>今日</b></div>
+        <div><h4>客户端缓存清晰度档位说明更新</h4><p>部分账号在移动端可选缓存档位与在线播放档位存在差异，下载前建议先确认。</p></div>
+        <span class="upd-badge new">新变化</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-06<b>昨</b></div>
+        <div><h4>合集类课程缓存批量选择技巧补充</h4><p>合集视频支持按集勾选缓存，逐集点选比整集下载更省空间，适合只补重点章节。</p></div>
+        <span class="upd-badge new">已更新</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-05</div>
+        <div><h4>下载文件音画分离结构的处理思路</h4><p>电脑端保存后出现“有画无声”，多数是音视频流未合并，需借助合并工具处理。</p></div>
+        <span class="upd-badge">解析</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-04</div>
+        <div><h4>移动端缓存过期与账号状态关联提醒</h4><p>退出登录或更换设备后，部分缓存可能无法继续播放，长期保存建议提前规划。</p></div>
+        <span class="upd-badge wait">注意</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-03</div>
+        <div><h4>番剧区更新节奏与离线补番建议</h4><p>周末更新集中，提前缓存可避免高峰期下载速度波动，通勤补番更顺畅。</p></div>
+        <span class="upd-badge">追番</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-02</div>
+        <div><h4>二创素材保存的版权边界再说明</h4><p>个人学习收藏与二次分发性质不同，b站下载后的文件请勿用于商业传播。</p></div>
+        <span class="upd-badge wait">提醒</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">11-01</div>
+        <div><h4>大容量视频存储空间规划建议</h4><p>4K与高码率文件体积明显更大，建议按“常看/偶尔看/存档”三级分类清理。</p></div>
+        <span class="upd-badge">技巧</span>
+      </div>
+      <div class="upd-item">
+        <div class="upd-date">10-30</div>
+        <div><h4>第三方下载工具的稳定性讨论</h4><p>工具更新频率与站点结构相关，遇到解析失败可先确认是否为版本问题。</p></div>
+        <span class="upd-badge">讨论</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="sec" id="cat">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>按需求找b站下载方案</h2>
+        <p>八个常见分类，对应不同的设备和目的</p>
+      </div>
+    </div>
+    <div class="cat-grid">
+      <a class="cat" href="/#hot"><i>移</i><span><b>移动端缓存</b><small>手机平板离线看</small></span></a>
+      <a class="cat" href="/#hot"><i>电</i><span><b>电脑端保存</b><small>本地文件与素材</small></span></a>
+      <a class="cat" href="/#deep"><i>画</i><span><b>清晰度选择</b><small>1080P/4K/HDR</small></span></a>
+      <a class="cat" href="/#guide"><i>转</i><span><b>格式与合并</b><small>音画同步处理</small></span></a>
+      <a class="cat" href="/#hot"><i>课</i><span><b>课程存档</b><small>分集命名整理</small></span></a>
+      <a class="cat" href="/#update"><i>番</i><span><b>追番缓存</b><small>更新节奏补番</small></span></a>
+      <a class="cat" href="/#faq"><i>问</i><span><b>常见问题</b><small>失效与排查</small></span></a>
+      <a class="cat" href="/#news"><i>讯</i><span><b>版本动态</b><small>功能变化跟踪</small></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 深度解析 -->
+<section class="sec" id="deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>深度解析：b站下载到底该怎么理解</h2>
+        <p>把“缓存”和“下载”分清楚，后面就顺了</p>
+      </div>
+    </div>
+    <div class="article">
+      <h3>一、先分清“缓存”和“下载保存”</h3>
+      <p>在哔哩哔哩客户端里点“缓存”，得到的是一份受客户端管理的离线文件。它能让你在没有网络时播放，但文件位置被封装在App内部，通常无法直接拷到电脑上播放，也不一定能用其他播放器打开。而大家口语里说的<strong>b站下载</strong>，往往指把视频变成可以随意移动、用任意播放器打开的普通视频文件，这两者在体验上差很多。</p>
+      <p>如果你的目标只是“路上看”，移动端缓存已经足够，清晰度可选、操作简单、失败率低。如果目标是“长期保存、剪辑使用、跨设备播放”，那就要走电脑端路线，并接受一定的操作成本。先把目标想清楚，能省掉大量无效尝试。</p>
+
+      <h3>二、清晰度与账号权益的关系</h3>
+      <p>在线能看到的最高画质，不等于缓存或保存时也能拿到同样的档位。高码率、4K、HDR等档位通常与账号权益绑定，未登录或权益不足时，可选档位会收窄。很多人反馈“下载后比在线糊”，多数不是工具问题，而是下载时选的档位本来就低。建议在下载前先看清晰度选项里可勾选的最高档，再决定是否值得下载。</p>
+      <p>另外，同一视频在不同终端上可选的档位也可能不同。手机端缓存界面和网页端播放器显示的分辨率列表未必一致，遇到疑问时以实际下载界面为准，而不是以播放界面为准。</p>
+
+      <h3>三、音画分离与格式问题</h3>
+      <p>电脑端保存的视频，常见结构是画面流和音频流分开存放。直接改文件后缀名，播放器往往只能识别其中一路，于是出现“只有画面”或“只有声音”。正确做法是用合并工具把两路流封装成一个完整文件，再按需转码成兼容性更好的格式。转码会带来一次画质损失，非必要不建议反复转。</p>
+      <div class="note">提示：合并与转码属于本地文件处理，工具选择上优先考虑开源、无捆绑安装的软件，避免为了一个b站下载需求装一堆来路不明的程序。</div>
+
+      <h3>四、节奏与消费体验</h3>
+      <p>从内容消费角度看，b站下载的价值集中在“时间错配”场景：更新在你没空的时候、网络在你不在的时候。追番党关心的是更新后尽快缓存；课程党关心的是分集管理和复习效率；素材党关心的是文件可用性和命名规范。三类人群对清晰度、体积、格式的优先级完全不同，所以没有一套万能方案。</p>
+      <p>比较务实的做法是：日常观看用在线，重要内容用缓存，长期存档才动用电脑端保存。把b站下载当成一个分层策略，而不是每次都要走最重的流程，存储空间和精力都会轻松不少。</p>
+
+      <h3>五、同类方案怎么比较</h3>
+      <p>移动端缓存胜在稳定和省心，缺点是封闭；电脑端保存胜在自由，缺点是需要动手；第三方在线解析胜在快，缺点是稳定性受站点结构影响，随时可能失效。三者不是替代关系，而是覆盖不同场景。搜索b站下载的人，通常真正想知道的是“我这个情况该用哪种”，而不是“哪个工具最强”。</p>
+      <p>最后提醒一句：无论用哪种方式，下载下来的内容请限定在个人学习、离线观看范围内，不要二次上传或用于商业用途，这既是平台规则，也是对创作者的基本尊重。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 体验指南 -->
+<section class="sec" id="guide">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>使用体验指南</h2>
+        <p>怎么用这一页更高效，以及操作上的小建议</p>
+      </div>
+    </div>
+    <div class="guide-grid">
+      <div class="guide"><b><i>1</i>先定目标</b><p>只想离线看就走缓存，想长期保存再考虑电脑端。目标不同，步骤差一倍，先想清楚再动手。</p></div>
+      <div class="guide"><b><i>2</i>确认清晰度</b><p>下载前看一眼可选档位，别默认最低档。高码率文件更大，按需取舍，别为了存档把手机塞满。</p></div>
+      <div class="guide"><b><i>3</i>注意登录状态</b><p>缓存与账号绑定较紧，换设备或退出登录可能导致无法播放，长期保存要提前规划备份方式。</p></div>
+      <div class="guide"><b><i>4</i>规范命名</b><p>课程和合集建议“系列名-集数-标题”命名，后期检索和复习会省很多时间，也便于批量整理。</p></div>
+      <div class="guide"><b><i>5</i>合并再播放</b><p>电脑端拿到分离文件先合并，别直接改后缀。合并后再用通用播放器验证音画是否同步。</p></div>
+      <div class="guide"><b><i>6</i>定期清理</b><p>按“常看/偶尔看/存档”三级管理，定期删掉看完的缓存，避免存储告急时被迫一次性大清理。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>b站下载常见问题</h2>
+        <p>围绕方法、清晰度、格式和版权的六个高频疑问</p>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>b站下载和客户端缓存有什么区别？</summary>
+        <div class="fa-body">缓存是客户端管理的离线文件，只能在该App内播放，位置封闭、不便转移；而通常说的b站下载指得到可用任意播放器打开的普通视频文件。前者适合通勤离线看，后者适合长期保存和素材整理。先明确用途再选方式，能避免下完发现“拷不出来”的尴尬。</div>
+      </details>
+      <details>
+        <summary>为什么下载后的清晰度比在线看低？</summary>
+        <div class="fa-body">多半是下载时选择的档位较低，或账号权益不足以解锁高码率、4K等档位。在线播放界面显示的分辨率和实际可缓存的档位不一定一致，建议以下载界面里可勾选的最高档为准。如果最高档仍不理想，通常是该视频本身就没有提供更高清晰度的源。</div>
+      </details>
+      <details>
+        <summary>电脑端保存后只有画面没有声音怎么办？</summary>
+        <div class="fa-body">这通常是因为画面流和音频流分开存放，直接改后缀名播放器只能识别一路。正确做法是用合并工具把两路流封装成一个完整文件，再按需转码。合并时注意选择与源文件匹配的封装格式，合并完成后用通用播放器完整播放一遍，确认音画同步再删除原始分片。</div>
+      </details>
+      <details>
+        <summary>缓存的视频过一段时间就看不了了，是什么原因？</summary>
+        <div class="fa-body">常见原因包括账号退出登录、更换设备、客户端版本更新导致缓存结构变化，以及部分内容的缓存本身带有有效期。如果这份内容对你很重要，建议不要只依赖单一缓存，提前规划更稳妥的保存方式，并保留原始链接方便重新获取。</div>
+      </details>
+      <details>
+        <summary>追番时怎么安排缓存比较合理？</summary>
+        <div class="fa-body">番剧更新节奏相对固定，建议在更新当天网络空闲时段缓存，避开高峰。一次不必缓存整季，按“下一周要看几集”来下，既省空间也减少过期风险。如果打算长期收藏，另建一个归档目录，和临时缓存分开管理会更清晰。</div>
+      </details>
+      <details>
+        <summary>下载b站视频需要注意哪些版权问题？</summary>
+        <div class="fa-body">个人学习、离线观看范围内的保存一般问题不大，但不要二次上传、不要用于商业用途、不要去掉原作者信息。二创素材的使用还要看原作品的具体授权说明。b站下载本质上是便利工具，边界感比工具本身更重要，尊重创作者才能让内容生态持续。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评论 -->
+<section class="sec" id="comments">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>用户讨论区</h2>
+        <p>近 30 天内关于b站下载的真实讨论摘录</p>
+      </div>
+    </div>
+    <div class="article">
+      <div class="cm-item"><div class="cm-av" style="background:#e8608a">柚</div><div class="cm-main"><div class="cm-top"><b>柚子汽水</b><small>2026-11-06</small></div><div class="cm-text">通勤党表示移动端缓存真的够用了，提前一晚下好，地铁上看完全不卡。就是清晰度别贪高，不然手机空间顶不住。</div><div class="cm-like">赞同 42</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#7a6bd6">阿</div><div class="cm-main"><div class="cm-top"><b>阿岚不熬夜</b><small>2026-11-06</small></div><div class="cm-text">之前一直以为缓存就是下载，结果想拷到电脑上发现根本找不到文件，看了这篇才明白是两回事，白折腾一晚上。</div><div class="cm-like">赞同 37</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#2fa87a">树</div><div class="cm-main"><div class="cm-top"><b>树下听风</b><small>2026-11-05</small></div><div class="cm-text">电脑端保存后没声音这个坑我踩过，音画分离，合并一下就好了。建议写清楚用哪种封装，新手容易在这里卡住。</div><div class="cm-like">赞同 29</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#e08b2b">柠</div><div class="cm-main"><div class="cm-top"><b>柠檬味的猫</b><small>2026-11-05</small></div><div class="cm-text">课程党狂喜，按章节命名归档真的太重要了，我以前全是默认文件名，复习的时候找一集找半天。</div><div class="cm-like">赞同 24</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#c8446c">半</div><div class="cm-main"><div class="cm-top"><b>半糖去冰</b><small>2026-11-04</small></div><div class="cm-text">中性说一句，第三方工具稳定性真的看运气，有时候能用有时候解析失败，别把重要内容只存一份。</div><div class="cm-like">赞同 21</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#4a90d9">追</div><div class="cm-main"><div class="cm-top"><b>追番小队长</b><small>2026-11-04</small></div><div class="cm-text">新番更新当天就缓存，周末一次性补完，体验很顺。就是提醒大家别下太多，看完记得清，不然空间告急。</div><div class="cm-like">赞同 18</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#8b6bd6">剪</div><div class="cm-main"><div class="cm-top"><b>剪辑新手小周</b><small>2026-11-03</small></div><div class="cm-text">做二创素材的话，画质和帧率要提前确认，转码次数越少越好。这篇讲格式那段挺实用，收藏了。</div><div class="cm-like">赞同 16</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#e8608a">不</div><div class="cm-main"><div class="cm-top"><b>不吃香菜</b><small>2026-11-03</small></div><div class="cm-text">吐槽一下，有些教程写的步骤早就过期了，客户端一更新全对不上。希望这类内容能标注更新时间。</div><div class="cm-like">赞同 15</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#2fa87a">地</div><div class="cm-main"><div class="cm-top"><b>地铁读书人</b><small>2026-11-02</small></div><div class="cm-text">出差党最需要的就是离线，飞机上没网也能看，这一点b站下载确实解决痛点，比在线舒服太多。</div><div class="cm-like">赞同 13</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#7a6bd6">考</div><div class="cm-main"><div class="cm-top"><b>考研冲鸭</b><small>2026-11-02</small></div><div class="cm-text">备考期间把网课缓存下来反复看，配合笔记时间戳效率很高。提醒后来人，重要课程别只存手机里。</div><div class="cm-like">赞同 12</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#e08b2b">路</div><div class="cm-main"><div class="cm-top"><b>路过的风</b><small>2026-10-31</small></div><div class="cm-text">我觉得还是看需求，日常随便看看真没必要折腾电脑端，缓存就够了，工具装多了反而麻烦。</div><div class="cm-like">赞同 11</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#4a90d9">一</div><div class="cm-main"><div class="cm-top"><b>一只小咸鱼</b><small>2026-10-30</small></div><div class="cm-text">想问下换手机之后缓存是不是就没了？我上次换机发现之前下的全打不开，有点懵。</div><div class="cm-like">赞同 9</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#c8446c">夜</div><div class="cm-main"><div class="cm-top"><b>夜猫子小林</b><small>2026-10-29</small></div><div class="cm-text">高清档位下载速度有时候挺慢的，错峰下会好很多，晚上高峰期先下低一档，第二天再补。</div><div class="cm-like">赞同 8</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#8b6bd6">版</div><div class="cm-main"><div class="cm-top"><b>版权意识在线</b><small>2026-10-28</small></div><div class="cm-text">补充一句，自己看没问题，搬去别的平台就过分了。b站下载是方便自己，不是方便搬运。</div><div class="cm-like">赞同 22</div></div></div>
+      <div class="cm-item"><div class="cm-av" style="background:#e8608a">番</div><div class="cm-main"><div class="cm-top"><b>番剧收集癖</b><small>2026-10-27</small></div><div class="cm-text">我习惯按季度建文件夹，番名加集数，几年下来特别好找。整理这件事，前期麻烦后期爽。</div><div class="cm-like">赞同 7</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 相关资讯 -->
+<section class="sec" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>相关资讯</h2>
+        <p>与b站下载、离线观看、格式处理有关的延伸阅读</p>
+      </div>
+    </div>
+    <div class="g-3">
+      <article class="news"><time>2026-11-06</time><h4>离线观看成为通勤刚需，b站下载需求持续走高</h4><p>地铁、高铁、航班场景下，提前缓存逐渐成为固定习惯，移动端缓存的稳定性成为用户最关心的点。</p></article>
+      <article class="news"><time>2026-11-04</time><h4>高码率档位与账号权益：下载前该确认的三件事</h4><p>清晰度档位、登录状态、终端差异，是影响b站下载实际效果的三个关键变量，提前确认可减少返工。</p></article>
+      <article class="news"><time>2026-11-02</time><h4>音画分离文件处理入门：合并比转码更重要</h4><p>面对分离的音视频流，先合并再考虑转码，是保住画质的基本原则，也是新手最容易忽略的一步。</p></article>
+      <article class="news"><time>2026-10-30</time><h4>课程党整理术：分集命名与归档目录怎么设计</h4><p>把b站下载的课程按系列、章节分层存放，配合笔记索引，能显著降低复习时的检索成本。</p></article>
+      <article class="news"><time>2026-10-28</time><h4>第三方下载工具的稳定性观察与使用建议</h4><p>工具更新跟不上站点结构变化时容易失效，建议保留官方缓存作为兜底方案，避免重要内容只存一份。</p></article>
+      <article class="news"><time>2026-10-26</time><h4>下载内容的版权边界：个人收藏与二次分发的区别</h4><p>个人学习与离线观看范围内的保存相对宽松，二次上传和商业使用则明显越界，使用前请先看清规则。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>b站下载指南</h5>
+        <p>一个围绕哔哩哔哩视频下载、缓存与离线观看的整理型专题页面，帮助不同需求的用户快速找到合适的方法，内容以实用、可对照为原则。</p>
+      </div>
+      <div>
+        <h5>栏目导航</h5>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#update">最新更新</a>
+        <a href="/#cat">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+      </div>
+      <div>
+        <h5>常见入口</h5>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户讨论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#intro">内容简介</a>
+      </div>
+      <div>
+        <h5>友情链接</h5>
+        <a href="/#home">站点首页</a>
+        <a href="/#cat">方法分类</a>
+        <a href="/#deep">格式说明</a>
+        <a href="/#faq">版权提醒</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 b站下载指南 · 本站为内容整理型专题页面，与哔哩哔哩官方无隶属关系。</p>
+      <p>免责声明：页面内容仅供学习与信息参考，下载与保存行为请遵守平台规则与著作权法，请勿用于商业传播。</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+                                                                                                                                                                                                                                                                             </html>
