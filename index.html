@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日主题大赛mrds-大赛赛程与往期回顾_每日主题大赛mrds社区精选</title>
+<meta name="description" content="每日主题大赛mrds是聚焦每日创意主题竞赛的内容站，提供往期赛果、赛程规则、优秀作品推荐与社区讨论。无论你是参赛者还是评委视角，都能在此找到每日主题大赛mrds的完整信息与灵感参考。">
+<meta name="keywords" content="每日主题大赛mrds,每日主题大赛,mrds大赛,主题大赛赛程,创意竞赛社区">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-page: #f8f7f4;
+  --bg-card: #ffffff;
+  --text-primary: #1c1e24;
+  --text-secondary: #4e5159;
+  --text-light: #7a7e8a;
+  --accent: #b84c2c;
+  --accent-light: #f3e6e1;
+  --accent-soft: #fef5f0;
+  --border: #e6e2db;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.07);
+  --radius-card: 18px;
+  --radius-sm: 12px;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 16px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+/* 顶部导航 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.logo-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 40px;
+  box-shadow: var(--shadow-sm);
+}
+.logo-badge span {
+  background: rgba(255,255,255,0.2);
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: 0.15s;
+}
+.nav-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+/* Banner */
+.hero {
+  background: linear-gradient(135deg, #f3e6e1 0%, #f8f7f4 85%);
+  border-radius: 32px;
+  padding: 36px 40px;
+  margin: 12px 0 28px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--accent);
+  background: rgba(184, 76, 44, 0.1);
+  padding: 0 8px;
+  border-radius: 8px;
+}
+.hero-desc {
+  font-size: 1.08rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+.search-bar {
+  display: flex;
+  max-width: 500px;
+  background: white;
+  border-radius: 60px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  outline: none;
+  background: transparent;
+}
+.search-bar button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0 28px;
+  font-weight: 600;
+  cursor: default;
+  font-size: 0.95rem;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.hero-tags a {
+  background: white;
+  padding: 8px 18px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+.hero-tags a:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+/* 通用section */
+.section {
+  margin: 48px 0;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+.section-header .more-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+/* 卡片网格 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 22px 20px 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-tag {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 3px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.card-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  margin: 10px 0 14px;
+  flex: 1;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+/* 更新列表 */
+.update-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.update-item {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: 0.15s;
+}
+.update-item:hover {
+  background: #fffcf9;
+  border-color: var(--accent-light);
+}
+.update-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  min-width: 150px;
+}
+.update-desc {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  flex: 1;
+}
+.update-time {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+/* 分类入口 */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+.category-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 60px;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: 0.15s;
+}
+.category-item:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+/* 深度解析正文 */
+.article-deep {
+  background: var(--bg-card);
+  border-radius: 28px;
+  padding: 36px 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+.article-deep h2 {
+  font-size: 1.9rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.article-deep h3 {
+  font-size: 1.3rem;
+  margin: 28px 0 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.article-deep p {
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+/* 体验指南 */
+.guide-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 22px;
+  margin-top: 16px;
+}
+.guide-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 24px 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.guide-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.guide-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+/* FAQ 手风琴风格 */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.faq-q {
+  padding: 18px 22px;
+  font-weight: 600;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  font-size: 1rem;
+}
+.faq-a {
+  padding: 0 22px 18px 22px;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  margin-top: 0;
+}
+/* 评论 */
+.comment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+.comment-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.comment-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+.comment-nick {
+  font-weight: 700;
+  color: var(--accent);
+}
+.comment-date {
+  color: var(--text-light);
+}
+.comment-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+/* 资讯卡片 */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 22px;
+}
+.news-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
+  padding: 22px 20px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: 0.15s;
+}
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+.news-date {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.news-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+.news-summary {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+/* 页脚 */
+.footer {
+  margin-top: 60px;
+  padding: 36px 0 28px;
+  border-top: 1px solid var(--border);
+  color: var(--text-light);
+  font-size: 0.85rem;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: var(--accent);
+}
+/* 响应式 */
+@media (max-width: 768px) {
+  body { padding: 0 8px; }
+  .hero { padding: 26px 20px; }
+  .hero h1 { font-size: 1.9rem; }
+  .article-deep { padding: 24px 20px; }
+  .navbar { flex-direction: column; align-items: flex-start; }
+  .nav-links { gap: 12px; }
+  .section-header h2 { font-size: 1.5rem; }
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <!-- 导航 -->
+  <header class="navbar">
+    <div class="logo-badge">MRDS <span>每日主题大赛</span></div>
+    <ul class="nav-links">
+      <li><a href="/#hero">首页</a></li>
+      <li><a href="/#hot">热门大赛</a></li>
+      <li><a href="/#updates">最新赛况</a></li>
+      <li><a href="/#categories">分类入口</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#comments">社区评论</a></li>
+    </ul>
+  </header>
+
+  <!-- Banner -->
+  <section id="hero" class="hero">
+    <h1><em>每日主题大赛mrds</em> — 创意对决·每日赛果·社区精选</h1>
+    <p class="hero-desc">实时追踪mrds每日主题大赛的赛程、榜单和优秀作品，一站获取赛题解析、往期回顾与参赛者反馈。无论你是参赛选手还是灵感收集者，这里都有你需要的每日主题大赛mrds最新动态。</p>
+    <div class="search-bar">
+      <input type="text" placeholder="搜索每日主题大赛mrds · 赛题 · 选手 · 作品" disabled>
+      <button disabled>搜索</button>
+    </div>
+    <div class="hero-tags">
+      <a href="/#hot">🔥 今日热榜</a>
+      <a href="/#updates">📅 赛程日历</a>
+      <a href="/#categories">🏷️ 主题分类</a>
+      <a href="/#deep">📖 大赛深度解析</a>
+      <a href="/#faq">❓ 常见疑问</a>
+      <a href="/#comments">💬 社区讨论</a>
+      <a href="/#news">📰 赛事资讯</a>
+      <a href="/#guide">📱 体验指南</a>
+    </div>
+  </section>
+
+  <!-- 内容简介 -->
+  <section id="intro" class="section">
+    <div class="article-deep">
+      <h2>关于每日主题大赛mrds</h2>
+      <p>每日主题大赛mrds（简称“mrds大赛”）是一个以每日公布创意主题、限时创作比拼为核心的内容型竞赛社区。它吸引着插画师、文案写手、短视频创作者以及各类灵感实践者。每天清晨，mrds大赛会发布一个主题词或场景设定，参赛者在规定时间内提交作品，由社区投票与专业评审共同选出当日优胜。这种高频率、轻量化的赛制，让每日主题大赛mrds成为不少创作者锤炼手感、积累作品集的热门选择。</p>
+      <p>本页面为mrds大赛的信息聚合站，提供往期赛果速览、赛程日历、优秀作品推荐、选手访谈以及社区热门讨论。如果你是第一次接触每日主题大赛mrds，可以从“深度解析”模块了解赛制与评审标准；如果你是老选手，不妨直接查看最新更新与热门大赛，快速进入今日赛题。我们每天同步mrds大赛的官方动态，并整理社区内的优质反馈，帮助你不错过每一次有趣的创意碰撞。</p>
+    </div>
+  </section>
+
+  <!-- 热门内容推荐 -->
+  <section id="hot" class="section">
+    <div class="section-header">
+      <h2>🔥 热门大赛·精选作品</h2>
+      <a href="/#hot" class="more-link">查看全部 →</a>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">「光影重构」主题赛</div>
+        <div><span class="card-tag">视觉设计</span><span class="card-tag">摄影</span><span class="card-tag">创意合成</span></div>
+        <div class="card-desc">利用日常物件制造戏剧性光影，冠军作品《窗格与猫》以极简构图获得评审团高分。</div>
+        <div class="card-meta"><span>🔥 热度 9.8k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「一句话微小说」</div>
+        <div><span class="card-tag">文字</span><span class="card-tag">故事</span><span class="card-tag">脑洞</span></div>
+        <div class="card-desc">限定20字内反转故事，参赛作品《最后一条消息》引发社区大量续写。</div>
+        <div class="card-meta"><span>🔥 热度 8.2k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「未来交通工具」</div>
+        <div><span class="card-tag">工业设计</span><span class="card-tag">概念</span><span class="card-tag">渲染</span></div>
+        <div class="card-desc">磁悬浮独轮车设计获得最佳创意奖，评审称赞其“将实用与科幻平衡得刚好”。</div>
+        <div class="card-meta"><span>🔥 热度 7.6k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「城市声音采样」</div>
+        <div><span class="card-tag">音频</span><span class="card-tag">环境录音</span><span class="card-tag">声音设计</span></div>
+        <div class="card-desc">参赛者将早市、地铁、雨声混剪成2分钟城市交响，评论区直呼“耳朵怀孕”。</div>
+        <div class="card-meta"><span>🔥 热度 6.4k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「异世界便利店」</div>
+        <div><span class="card-tag">插画</span><span class="card-tag">场景</span><span class="card-tag">奇幻</span></div>
+        <div class="card-desc">将日常便利店与魔法元素融合，画师@Mori的作品被选为本周mrds大赛官方封面。</div>
+        <div class="card-meta"><span>🔥 热度 10.1k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「30秒反转短片」</div>
+        <div><span class="card-tag">短视频</span><span class="card-tag">剧情</span><span class="card-tag">剪辑</span></div>
+        <div class="card-desc">限时30秒内完成一个完整故事，获奖作品《快递》用三个镜头玩转时间循环。</div>
+        <div class="card-meta"><span>🔥 热度 9.0k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「像素风角色」</div>
+        <div><span class="card-tag">游戏美术</span><span class="card-tag">像素</span><span class="card-tag">角色设计</span></div>
+        <div class="card-desc">在64x64画布内设计一个原创角色，社区投票选出了“最想看到续作”的像素骑士。</div>
+        <div class="card-meta"><span>🔥 热度 5.8k</span><span>🏆 已结束</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">「极简海报挑战」</div>
+        <div><span class="card-tag">平面设计</span><span class="card-tag">排版</span><span class="card-tag">构成</span></div>
+        <div class="card-desc">仅用黑白两色与三个图形元素完成主题海报，冠军作品被多家设计号转载。</div>
+        <div class="card-meta"><span>🔥 热度 7.2k</span><span>🏆 已结束</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新更新 -->
+  <section id="updates" class="section">
+    <div class="section-header">
+      <h2>📅 最新赛况·每日更新</h2>
+      <a href="/#updates" class="more-link">全部记录 →</a>
+    </div>
+    <div class="update-list">
+      <div class="update-item"><span class="update-name">主题「折叠城市」</span><span class="update-desc">第214期mrds大赛已开赛，限定24小时提交，当前作品数已突破800份。</span><span class="update-time">2026-11-07</span></div>
+      <div class="update-item"><span class="update-name">优胜公布：第213期「声音记忆」</span><span class="update-desc">冠军由@声谷获得，作品《外婆的收音机》获评审全票推荐。</span><span class="update-time">2026-11-06</span></div>
+      <div class="update-item"><span class="update-name">主题「逆向思维」</span><span class="update-desc">mrds大赛新增“评委特别奖”，鼓励打破常规的创意表达。</span><span class="update-time">2026-11-05</span></div>
+      <div class="update-item"><span class="update-name">社区投票通道升级</span><span class="update-desc">每日主题大赛mrds投票页新增“作品集浏览模式”，方便连续查看同一作者作品。</span><span class="update-time">2026-11-04</span></div>
+      <div class="update-item"><span class="update-name">第212期「食物拟人」</span><span class="update-desc">优胜作品《火锅精灵》已收录至mrds大赛年度画册候选名单。</span><span class="update-time">2026-11-03</span></div>
+      <div class="update-item"><span class="update-name">赛制调整预告</span><span class="update-desc">12月起mrds大赛将试行“双主题周”，每周三额外增加一个跨界主题。</span><span class="update-time">2026-11-02</span></div>
+      <div class="update-item"><span class="update-name">主题「透明质感」</span><span class="update-desc">参赛者需在作品中体现玻璃/水/空气等透明元素，目前已收到350+作品。</span><span class="update-time">2026-11-01</span></div>
+      <div class="update-item"><span class="update-name">十月月度总冠军揭晓</span><span class="update-desc">插画师@Lin以三次单期优胜获得月度积分第一，获得mrds大赛定制徽章。</span><span class="update-time">2026-10-31</span></div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section id="categories" class="section">
+    <div class="section-header">
+      <h2>🏷️ 主题分类·快速导航</h2>
+    </div>
+    <div class="category-grid">
+      <a href="/#categories" class="category-item">视觉设计</a>
+      <a href="/#categories" class="category-item">文字创作</a>
+      <a href="/#categories" class="category-item">短视频</a>
+      <a href="/#categories" class="category-item">音频/声音</a>
+      <a href="/#categories" class="category-item">工业/概念</a>
+      <a href="/#categories" class="category-item">插画/绘画</a>
+      <a href="/#categories" class="category-item">游戏美术</a>
+      <a href="/#categories" class="category-item">跨界脑洞</a>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section id="deep" class="section">
+    <div class="article-deep">
+      <h2>每日主题大赛mrds 深度解析：赛制、评审与创意趋势</h2>
+      <p>每日主题大赛mrds之所以在创意社区中保持高活跃度，与其独特的“日更赛制”密不可分。每天一个主题，24小时创作窗口，既降低了长期项目的心理负担，又锻炼了参赛者在压力下快速产出的能力。对于观望者来说，理解mrds大赛的评审维度是参与的第一步。目前评审主要从三个角度打分：主题契合度（40%）、创意表现力（35%）以及完成度（25%）。这意味着一个脑洞大但未完成的作品往往不敌一个完成度高且切题的成熟小作品。</p>
+      <h3>主题趋势：从日常观察到概念重构</h3>
+      <p>回顾近三个月的mrds大赛主题，可以明显看到一条演变路径：早期以“日常物品的非常规视角”为主，例如“一把椅子的100种用途”；近期则更多出现“概念重构”类题目，例如“折叠城市”“透明质感”“逆向思维”。这些主题要求参赛者跳出舒适区，用更抽象的思维去组织视觉或文字表达。社区反馈中，不少选手表示这类主题虽然难度大，但更容易诞生让人眼前一亮的作品。</p>
+      <h3>参赛者画像与社区氛围</h3>
+      <p>每日主题大赛mrds的参与者以18-35岁的创意工作者与爱好者为主，其中包括自由插画师、设计专业学生、文案策划以及部分跨行业但热爱创作的上班族。社区氛围整体友好，评论区以建设性反馈为主。在mrds大赛中，你很少看到“菜就多练”式的嘲讽，更多是“这个想法如果再加一层光影可能会更好”的具体建议。这种氛围使得新人愿意持续参与，也促成了每日主题大赛mrds的高留存率。</p>
+      <h3>如何高效参与并提升胜率</h3>
+      <p>如果你希望提升在mrds大赛中的成绩，可以关注以下几点：第一，仔细阅读当日主题的“提示说明”，官方通常会给出1-2个方向性建议，顺应建议的作品往往更受评审青睐；第二，控制创作时间，避免陷入细节修改，每日主题大赛mrds的节奏要求快速决策；第三，可以在提交后浏览其他作品，学习不同的切入角度，为下一次比赛积累灵感。很多优胜者都保持着“每日一题，每周一总结”的习惯。</p>
+      <p>综合来看，每日主题大赛mrds不仅是一个比赛，更像一个创意者的日常训练场。它的价值不仅在于名次，更在于通过每日的高频输出，帮助参与者建立持续创作的肌肉记忆。如果你正在寻找一个能让自己保持创作状态的社区，mrds大赛值得加入。</p>
+    </div>
+  </section>
+
+  <!-- 体验指南 -->
+  <section id="guide" class="section">
+    <div class="section-header">
+      <h2>📱 体验指南·玩转mrds大赛</h2>
+    </div>
+    <div class="guide-box">
+      <div class="guide-card"><h4>🔍 快速筛选</h4><p>分类入口和搜索框帮你按主题类型或关键词定位往期赛果，节省浏览时间。</p></div>
+      <div class="guide-card"><h4>📱 移动端适配</h4><p>页面在手机端自动调整卡片与文字大小，追更、看评论都更轻松。</p></div>
+      <div class="guide-card"><h4>⏱️ 追更提醒</h4><p>最新更新模块每天同步mrds大赛赛题与结果，适合每天花5分钟快速浏览。</p></div>
+      <div class="guide-card"><h4>💬 评论互动</h4><p>评论区汇集参赛者与观众的真实反馈，可从中了解创作背后的思路。</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="section-header">
+      <h2>❓ 常见问题·关于每日主题大赛mrds</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><div class="faq-q">每日主题大赛mrds的参赛门槛高吗？</div><div class="faq-a">门槛不高。mrds大赛没有专业资格限制，任何感兴趣的人都可以在每日主题公布后提交作品。评审更看重创意与完成度，而非绝对的技术水平。很多新人的第一次投稿就获得了不错的社区反馈。</div></div>
+      <div class="faq-item"><div class="faq-q">每日主题大赛mrds每天几点公布新主题？</div><div class="faq-a">通常在北京时间每天上午10:00左右公布当日主题，提交截止到当晚22:00。评审与投票在次日进行，优胜结果一般在次日下午更新。关注页面“最新赛况”模块可以及时看到。</div></div>
+      <div class="faq-item"><div class="faq-q">mrds大赛的评审标准具体是怎样的？</div><div class="faq-a">评审采用主题契合度40%、创意表现力35%、完成度25%的权重。其中主题契合度指作品是否准确回应了当日主题；创意表现力关注切入角度与表现手法的新颖度；完成度则看作品是否完整、细节是否到位。</div></div>
+      <div class="faq-item"><div class="faq-q">在哪里可以看到往期mrds大赛的优胜作品？</div><div class="faq-a">本页热门大赛模块展示了近期的优秀作品推荐，深度解析模块也有趋势分析。此外社区评论中常有参赛者分享作品链接。官方历史归档可在mrds大赛专题页的“往期回顾”中找到。</div></div>
+      <div class="faq-item"><div class="faq-q">每日主题大赛mrds适合哪些人参加？</div><div class="faq-a">适合插画师、设计师、文案、短视频创作者以及任何想保持创意练习的人。每天一个主题的节奏非常适合用来积累作品集、突破创作瓶颈，也适合学生作为课外实践。</div></div>
+      <div class="faq-item"><div class="faq-q">如果错过了当天主题，还能补交作品吗？</div><div class="faq-a">不能。mrds大赛强调“每日限时”的公平性，超过提交时间后系统会关闭入口。但你可以将未完成的作品作为练习自行完善，或关注次日的新主题继续参与。</div></div>
+    </div>
+  </section>
+
+  <!-- 评论 -->
+  <section id="comments" class="section">
+    <div class="section-header">
+      <h2>💬 社区评论·大家怎么说</h2>
+    </div>
+    <div class="comment-grid">
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@像素阿茶</span><span class="comment-date">2026-11-06</span></div><div class="comment-text">今天的折叠城市主题太棒了，看到好几个用纸艺做概念图的，脑洞好大。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@Mori_插画</span><span class="comment-date">2026-11-05</span></div><div class="comment-text">连续参加了15天，明显感觉下笔速度变快了，mrds大赛的节奏真的能治拖延症。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@声谷</span><span class="comment-date">2026-11-04</span></div><div class="comment-text">上一期声音记忆拿了冠军，感谢评委！这期的透明质感准备试试水。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@不熬夜设计</span><span class="comment-date">2026-11-03</span></div><div class="comment-text">建议mrds大赛能增加一个“过程分享”环节，有时候想看看大佬的草图。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@文案小张</span><span class="comment-date">2026-11-02</span></div><div class="comment-text">文字类主题相对少一些，希望多来点一句话微小说那种，写起来很过瘾。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@Kimi</span><span class="comment-date">2026-11-01</span></div><div class="comment-text">作为观众，每天看作品也是一种享受，社区氛围比很多平台好太多了。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@铅笔头</span><span class="comment-date">2026-10-30</span></div><div class="comment-text">评审标准挺透明的，之前有个作品完成度不够，果然没进前三，心服口服。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@三水工</span><span class="comment-date">2026-10-29</span></div><div class="comment-text">建议每日主题大赛mrds出个年度精选电子刊，把每月冠军放进去，肯定收藏。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@阿基米德</span><span class="comment-date">2026-10-28</span></div><div class="comment-text">今天逆思维主题有人用反色画法，太绝了，完全没想到。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@懒人听书</span><span class="comment-date">2026-10-27</span></div><div class="comment-text">希望音频类作品也能在页面内直接试听，现在要跳转有点麻烦。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@夏目</span><span class="comment-date">2026-10-26</span></div><div class="comment-text">mrds大赛的往期题目可以再整理得细一点吗？比如按难度分级。</div></div>
+      <div class="comment-card"><div class="comment-head"><span class="comment-nick">@大碗宽面</span><span class="comment-date">2026-10-25</span></div><div class="comment-text">基本每天都会来刷一下赛果，已经成为习惯了，希望一直办下去。</div></div>
+    </div>
+  </section>
+
+  <!-- 相关资讯 -->
+  <section id="news" class="section">
+    <div class="section-header">
+      <h2>📰 赛事资讯·近期动态</h2>
+    </div>
+    <div class="news-grid">
+      <div class="news-card"><div class="news-date">2026-11-07</div><div class="news-title">mrds大赛第214期「折叠城市」开赛，赛题灵感来自城市空间</div><div class="news-summary">本期要求参赛者在作品中呈现多维折叠的空间关系，目前已收到超过800份投稿，竞争激烈。</div></div>
+      <div class="news-card"><div class="news-date">2026-11-06</div><div class="news-title">第213期「声音记忆」优胜公布，音频作品首次夺冠</div><div class="news-summary">@声谷的《外婆的收音机》以细腻的环境音设计与情感叙事获得评审全票，成为mrds大赛首个音频类冠军。</div></div>
+      <div class="news-card"><div class="news-date">2026-11-05</div><div class="news-title">每日主题大赛mrds公布12月赛制升级方案</div><div class="news-summary">自12月起试行“双主题周”，每周三增加一个跨界主题，鼓励不同领域创作者合作。</div></div>
+      <div class="news-card"><div class="news-date">2026-11-03</div><div class="news-title">十月月度总冠军出炉：插画师@Lin三度登顶</div><div class="news-summary">@Lin凭借稳定的高质量输出获得月度积分第一，获得mrds大赛定制实体徽章及年度画册直通资格。</div></div>
+      <div class="news-card"><div class="news-date">2026-11-01</div><div class="news-title">mrds大赛社区投票页新增“作者追踪”功能</div><div class="news-summary">现在可以关注喜欢的创作者，第一时间查看其最新参赛作品，提升社区互动效率。</div></div>
+      <div class="news-card"><div class="news-date">2026-10-30</div><div class="news-title">每日主题大赛mrds与多家设计社区达成内容合作</div><div class="news-summary">优胜作品将有机会在合作社区首页展示，进一步扩大创作者曝光。</div></div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="/#hero">首页</a>
+      <a href="/#hot">热门大赛</a>
+      <a href="/#updates">最新赛况</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">社区评论</a>
+    </div>
+    <p>© 2026 每日主题大赛mrds 信息聚合站 · 本站内容为第三方整理，与官方无直接隶属关系</p>
+    <p style="margin-top:12px; font-size:0.8rem;">友情链接占位：创意社区 / 设计资源导航 / 灵感图库</p>
+  </footer>
+
+</div>
+</body>
+      </html>
